@@ -13,7 +13,7 @@
 }
 body {
   @extend container;
-  background-image: url(<%= asset_path 'bg.jpg' %>); !important;
+  background-image: url(asset-path('bg.jpg')); !important;
   background-repeat: repeat;
   line-height: 1;
   color: black;
