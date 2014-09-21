@@ -1,39 +1,7 @@
-<div id="outer-wrap-centered">
-
-  <div id="dropshadow-top" class="dropshadow-topbottom">
-    <div id="dropshadow-top-left" class="dropshadow-corner"></div>
-    <div id="dropshadow-top-right" class="dropshadow-corner"></div>
-    <div id="dropshadow-top-center" class="dropshadow-center"></div>
-  </div>
-
-  <div id="main-wrap-outer">
-
-    <div id="main-wrap-inner">
-
-      <div id="inner-wrap">
-        <!-- #bio-->
-        <div id="content-wrap" class="sc">
-
-          <div id="content">
-           <%= render :partial => 'posts' %>
-          </div>
-
-        </div>
-
-      </div>
-      <!-- #inner-wrap -->
-
+<div class="container-fluid">
+  <div class="post-index">
+    <div class="posts-container">
+      <%= render :partial => 'posts' %>
     </div>
-    <!-- #main-wrap-inner -->
-
   </div>
-  <!-- #main-wrap-outer -->
-
-  <div id="dropshadow-bottom" class="dropshadow-topbottom">
-    <div id="dropshadow-bottom-left" class="dropshadow-corner"></div>
-    <div id="dropshadow-bottom-right" class="dropshadow-corner"></div>
-    <div id="dropshadow-bottom-center" class="dropshadow-center"></div>
-  </div>
-
 </div>
-<!-- #outer-wrap-centered -->

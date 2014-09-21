@@ -40,3 +40,10 @@ gem 'zurb-foundation', '~> 4.0.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+gem 'guard-rails', group: :development
+gem 'rails_12factor', group: :production
+
+ruby "2.1.1"

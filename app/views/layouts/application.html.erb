@@ -20,15 +20,9 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body id="body" class="single single-post postid-5045 single-format-standard not-mobile article-really-good-vegan-tomato-soup-recipe">
-
-    <div id="inner-body">
-      <%= render :partial => 'layouts/header' %>
-
-      <div id="main">
-        <%= yield %>
-      </div>
-    </div>
+  <body>
+    <%= render :partial => 'layouts/header' %>
+    <%= yield %>
 
     <%= render :partial => 'layouts/footer' %>
     <%= javascript_include_tag "application" %>

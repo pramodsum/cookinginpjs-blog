@@ -1,3 +1,12 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.post-index{
+  margin: auto;
+  background: white;
+  width: 91%;
+  max-width: 935px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  .posts-container {
+    padding: 2em !important;
+  }
+}

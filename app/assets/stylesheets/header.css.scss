@@ -1,0 +1,104 @@
+#masthead-frame-and-content-wrap {
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  width: 93.5%;
+
+  img {
+    @extend img-responsive;
+    margin: auto;
+  }
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+.ribbon {
+  font-size: 16px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  height: auto;
+  width: 92%;
+  background-color: #92b3d4;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0 0.25em;
+  padding-top: 0.25em;
+  /* Adjust to suit */
+  text-align: center;
+  margin: 0 auto;
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+
+  a {
+    color: white;
+  }
+
+  a:hover, a:focus,
+  li:hover, li:focus{
+    background: none !important;
+    color: #fffaba;
+  }
+
+  li {
+    list-style:none;
+    display: inline-block;
+  }
+}
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid rgb(134, 166, 198);
+  /*side ribbons*/
+  z-index: -1;
+}
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: rgb(134, 166, 198) transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+@media (min-width: 768px) {
+  .ribbon {
+    max-width: 664px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ribbon {
+    max-width: 866px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ribbon {
+    max-width: 970px;
+  }
+}
+
+.nav {
+  float: left;
+}
