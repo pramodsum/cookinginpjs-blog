@@ -13,9 +13,3 @@
  *= require_self
  *= require foundation_and_overrides
  */
-
-body {
-  background-image: url('bg.jpg');
-  background-repeat: repeat;
-}
- *= require foundation_and_overrides
