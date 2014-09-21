@@ -1,3 +1,5 @@
+//= depend_on_asset "bg.jpg"
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
  footer {
@@ -13,7 +15,7 @@
 }
 body {
   @extend container;
-  background-image: url('bg.jpg') !important;
+  background-image: url('<%= asset_path("bg.jpg") %> ') !important;
   background-repeat: repeat;
   line-height: 1;
   color: black;
