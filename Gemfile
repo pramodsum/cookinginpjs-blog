@@ -56,4 +56,7 @@ gem 'activeadmin',      github: 'gregbell/active_admin'             # ActiveAdmi
 
 gem 'sprockets', '2.11.0'
 
+gem 'redcarpet'
+gem 'rouge'
+
 ruby "2.1.2"
