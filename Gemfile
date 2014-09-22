@@ -45,5 +45,6 @@ gem 'autoprefixer-rails'
 
 gem 'guard-rails', group: :development
 gem 'rails_12factor', group: :production
+gem 'rails_serve_static_assets', group: [:production]
 
 ruby "2.1.2"
