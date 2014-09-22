@@ -3,7 +3,7 @@ ActiveAdmin.register Post do
   controller do
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :body, :comment, :published, :author, :author_id)
+      params.require(:post).permit(:title, :body, :comment, :author, :author_id)
     end
 
     # GET /posts/new
@@ -22,12 +22,8 @@ ActiveAdmin.register Post do
 
       respond_to do |format|
         if @post.save
-          if @post.published
-            format.html { redirect_to @post, notice: 'Post was successfully updated.' }
-            format.json { render :show, status: :ok, location: @post }
-          else
-            rails_admin.dashboard_path
-          end
+          format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+          format.json { render :show, status: :ok, location: @post }
         else
           format.html { render :new }
           format.json { render json: @post.errors, status: :unprocessable_entity }
