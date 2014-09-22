@@ -1,2 +1,15 @@
-<span>post.created_at</span>
-<h1 class="article-title">post.title</h1>
+<% @posts.each do |post| %>
+  <h1>
+    <%= post.title %>
+    <small>
+      <%= post.created_at %>
+    </small>
+  </h1>
+  <td><%= post.text %></td>
+<% end %>
+
+<% if @posts.empty? %>
+  <center>
+    <h1>We haven't posted anything yet :(</h1>
+  </center>
+<% end %>
