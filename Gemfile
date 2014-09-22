@@ -47,4 +47,13 @@ gem 'guard-rails', group: :development
 gem 'rails_12factor', group: :production
 gem 'rails_serve_static_assets', group: [:production]
 
+gem 'polyamorous',      github: 'activerecord-hackery/polyamorous'  # Require for ActiveAdmin to work with Rails 4.1
+gem 'ransack',          github: 'activerecord-hackery/ransack'      # Require for ActiveAdmin to work with Rails 4.1
+gem 'formtastic'
+gem 'devise'
+
+gem 'activeadmin',      github: 'gregbell/active_admin'             # ActiveAdmin backend framework for Rails administration interface
+
+gem 'sprockets', '2.11.0'
+
 ruby "2.1.2"
