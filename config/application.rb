@@ -19,20 +19,6 @@ module Foodblog
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-
-    config.autoload_paths += %W(#{config.root}/lib)
-
-    config.encoding = "utf-8"
-
-    config.filter_parameters += [:password]
-
-    config.active_support.escape_html_entities_in_json = true
-
-    config.assets.paths << Rails.root.join("lib", "assets")
-
-    config.assets.enabled = true
-    config.assets.initialize_on_precompile = false
-
-    config.assets.version = '1.0'
+    config.serve_static_assets = true
   end
 end
