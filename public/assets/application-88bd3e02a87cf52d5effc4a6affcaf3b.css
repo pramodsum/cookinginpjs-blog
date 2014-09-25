@@ -8280,6 +8280,22 @@ hgroup {
   box-shadow: 0 0 8px black;
 }
 
+/* line 64, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+small {
+  color: #92b3d4;
+}
+
+/* line 2, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/comments.css.scss */
+.comments .btn {
+  background: #92b3d4;
+  color: white !important;
+}
+/* line 6, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/comments.css.scss */
+.comments .btn:hover, .comments .btn:focus {
+  background: #ffec82 !important;
+  color: black !important;
+}
+
 /* line 1, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/github.css */
 .hll {
   background-color: #ffffcc;
