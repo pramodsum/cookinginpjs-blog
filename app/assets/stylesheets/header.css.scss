@@ -34,8 +34,9 @@
 
   a:hover, a:focus,
   li:hover, li:focus{
-    background: none !important;
-    color: #92b3d4;
+    background: #92b3d4 !important;
+    border-radius: 5px;
+    color: white;
   }
 
   li {
@@ -100,7 +101,8 @@
 }
 
 .nav {
-  float: left;
+  width: 100%;
+  margin-top: 1px;
 }
 
 .ribbon > div {
