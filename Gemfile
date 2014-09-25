@@ -58,5 +58,6 @@ gem 'sprockets', '2.11.0'
 
 gem 'redcarpet'
 gem 'rouge'
+gem 'ionicons-rails'
 
 ruby "2.1.2"

@@ -10,3 +10,21 @@
     padding: 2em !important;
   }
 }
+
+@media (min-width: 768px) {
+  .post-index {
+    max-width: 654px;
+  }
+}
+
+@media (min-width: 992px) {
+  .post-index {
+    max-width: 860px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .post-index {
+    max-width: 965px;
+  }
+}

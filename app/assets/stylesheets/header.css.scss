@@ -18,9 +18,9 @@
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
   height: auto;
   width: 92%;
-  background-color: #92b3d4;
+  background-color: #ffec82;
   border-radius: 5px;
-  color: #fff;
+  color: black;
   padding: 0 0.25em;
   padding-top: 0.25em;
   /* Adjust to suit */
@@ -29,13 +29,13 @@
   /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 
   a {
-    color: white;
+    color: black;
   }
 
   a:hover, a:focus,
   li:hover, li:focus{
     background: none !important;
-    color: #fffaba;
+    color: #92b3d4;
   }
 
   li {
@@ -49,7 +49,7 @@
   position: absolute;
   display: block;
   bottom: -1em;
-  border: 1.5em solid rgb(134, 166, 198);
+  border: 1.5em solid #f4e17c;
   /*side ribbons*/
   z-index: -1;
 }
@@ -69,7 +69,7 @@
   position: absolute;
   display: block;
   border-style: solid;
-  border-color: rgb(134, 166, 198) transparent transparent transparent;
+  border-color: #f4e17c transparent transparent transparent;
   bottom: -1em;
 }
 .ribbon .ribbon-content:before {
@@ -83,19 +83,19 @@
 
 @media (min-width: 768px) {
   .ribbon {
-    max-width: 664px;
+    max-width: 694px;
   }
 }
 
 @media (min-width: 992px) {
   .ribbon {
-    max-width: 866px;
+    max-width: 896px;
   }
 }
 
 @media (min-width: 1200px) {
   .ribbon {
-    max-width: 970px;
+    max-width: 1000px;
   }
 }
 

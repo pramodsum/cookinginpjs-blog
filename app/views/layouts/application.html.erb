@@ -22,8 +22,9 @@
 
   <body>
     <%= render :partial => 'layouts/header' %>
-    <%= yield %>
-
+    <div class="main-content">
+      <%= yield %>
+    </div>
     <%= render :partial => 'layouts/footer' %>
     <%= javascript_include_tag "application" %>
     <%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" %>
