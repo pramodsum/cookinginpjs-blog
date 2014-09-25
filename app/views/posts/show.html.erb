@@ -1,25 +1,24 @@
 <div class="container-fluid">
   <div class="post-index">
-    <div class="posts-container">
+    <div class="posts-container comments">
       <p id="notice"><%= notice %></p>
+        <%= render :partial => 'post' %>
 
-       <%= render :partial => 'post' %>
+        <div class="spacer">
+          <div class="mask"></div>
+        </div>
 
-       <%= link_to 'Edit', edit_post_path(@post) %> |
-       <%= link_to 'Back', posts_path %>
-
-       <h2>Comments</h2>
-       <div id="comments">
-               <%= render :partial => @post.comments %>
-       </div>
-
-      <%= form_for [@post, Comment.new], :remote => true do |f| %>
+        <h3>Comments</h3>
+        <hr>
+        <div id="comments">
+          <%= render :partial => @post.comments %>
+        </div>
+        <%= form_for [@post, Comment.new], :remote => true do |f| %>
          <p>
-           <%= f.label :body, "New comment" %><br/>
-           <%= f.text_area :body %>
+           <%= f.text_area :body, :class => "form-control" %>
          </p>
-         <p><%= f.submit "Add comment" %></p>
-       <% end %>
+         <p><%= f.submit "Add comment", :class => 'btn' %></p>
+        <% end %>
     </div>
   </div>
 </div>

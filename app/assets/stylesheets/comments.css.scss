@@ -1,3 +1,10 @@
-// Place all the styles related to the Comments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.comments {
+  .btn {
+    background: #92b3d4;
+    color: white !important;
+  }
+  .btn:hover, .btn:focus {
+    background: #ffec82 !important;
+    color: black !important;
+  }
+}
