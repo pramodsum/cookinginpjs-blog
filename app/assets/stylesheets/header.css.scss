@@ -102,3 +102,9 @@
 .nav {
   float: left;
 }
+
+.ribbon > div {
+  border: 1px dashed grey;
+  border-color: rgba(124, 124, 124, 0.5);
+  height: 40px;
+}

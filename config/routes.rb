@@ -59,4 +59,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get '/404', :to => 'errors#not_found'
+  get '/500', :to => 'errors#internal_error'
+  get '/422', :to => 'errors#unprocessable_entity'
+
 end
