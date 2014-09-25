@@ -8104,16 +8104,17 @@ hgroup {
 /* line 36, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .ribbon a:hover, .ribbon a:focus,
 .ribbon li:hover, .ribbon li:focus {
-  background: none !important;
-  color: #92b3d4;
+  background: #92b3d4 !important;
+  border-radius: 5px;
+  color: white;
 }
-/* line 41, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+/* line 42, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .ribbon li {
   list-style: none;
   display: inline-block;
 }
 
-/* line 47, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+/* line 48, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .ribbon:before,
 .ribbon:after {
   content: "";
@@ -8125,21 +8126,21 @@ hgroup {
   z-index: -1;
 }
 
-/* line 56, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+/* line 57, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .ribbon:before {
   left: -2em;
   border-right-width: 1.5em;
   border-left-color: transparent;
 }
 
-/* line 61, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+/* line 62, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .ribbon:after {
   right: -2em;
   border-left-width: 1.5em;
   border-right-color: transparent;
 }
 
-/* line 67, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+/* line 68, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .ribbon .ribbon-content:before,
 .ribbon .ribbon-content:after {
   content: "";
@@ -8150,42 +8151,43 @@ hgroup {
   bottom: -1em;
 }
 
-/* line 75, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+/* line 76, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .ribbon .ribbon-content:before {
   left: 0;
   border-width: 1em 0 0 1em;
 }
 
-/* line 79, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+/* line 80, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .ribbon .ribbon-content:after {
   right: 0;
   border-width: 1em 1em 0 0;
 }
 
 @media (min-width: 768px) {
-  /* line 85, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+  /* line 86, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
   .ribbon {
     max-width: 694px;
   }
 }
 @media (min-width: 992px) {
-  /* line 91, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+  /* line 92, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
   .ribbon {
     max-width: 896px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 97, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+  /* line 98, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
   .ribbon {
     max-width: 1000px;
   }
 }
-/* line 102, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+/* line 103, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .nav {
-  float: left;
+  width: 100%;
+  margin-top: 1px;
 }
 
-/* line 106, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+/* line 108, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
 .ribbon > div {
   border: 1px dashed grey;
   border-color: rgba(124, 124, 124, 0.5);
