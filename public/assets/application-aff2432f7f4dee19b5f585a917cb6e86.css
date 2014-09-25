@@ -16,7 +16,6 @@
 
 
 @import 'ionicons';
-@import 'footer';
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, /Users/pramods/.rvm/gems/ruby-2.1.2/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -8186,6 +8185,13 @@ hgroup {
   float: left;
 }
 
+/* line 106, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/header.css.scss */
+.ribbon > div {
+  border: 1px dashed grey;
+  border-color: rgba(124, 124, 124, 0.5);
+  height: 40px;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 /* line 5, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/footer.css.scss */
@@ -8220,25 +8226,60 @@ hgroup {
 .post-index .posts-container {
   padding: 2em !important;
 }
+/* line 13, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+.post-index .posts-container h1 a {
+  color: black;
+}
+/* line 17, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+.post-index .posts-container h1 a:hover, .post-index .posts-container h1 a:focus {
+  color: #ffec82;
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+}
+/* line 24, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+.post-index .posts-container .date {
+  color: #92b3d4;
+}
 
 @media (min-width: 768px) {
-  /* line 15, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+  /* line 31, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
   .post-index {
     max-width: 654px;
   }
 }
 @media (min-width: 992px) {
-  /* line 21, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+  /* line 37, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
   .post-index {
     max-width: 860px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 27, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+  /* line 43, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
   .post-index {
     max-width: 965px;
   }
 }
+/* line 48, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+.spacer {
+  margin-top: 50px;
+  position: relative;
+}
+/* line 52, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+.spacer .mask {
+  overflow: hidden;
+  height: 20px;
+}
+/* line 54, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/posts.css.scss */
+.spacer .mask:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px / 12px;
+  box-shadow: 0 0 8px black;
+}
+
 /* line 1, /Users/pramods/Documents/Box Documents/foodblog/app/assets/stylesheets/github.css */
 .hll {
   background-color: #ffffcc;
