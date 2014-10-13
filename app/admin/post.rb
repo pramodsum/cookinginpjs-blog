@@ -1,5 +1,17 @@
 ActiveAdmin.register Post do
 
+  form do |f|
+    f.semantic_errors *f.object.errors.keys
+    f.inputs "Details" do
+      f.input :title
+      f.input :tag_list
+    end
+    f.inputs "Content" do
+      f.input :body
+    end
+    f.actions
+  end
+
   controller do
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params

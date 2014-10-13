@@ -60,6 +60,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  get '/about', :to => 'pages#about'
+
   get '/404', :to => 'errors#not_found'
   get '/500', :to => 'errors#internal_error'
   get '/422', :to => 'errors#unprocessable_entity'

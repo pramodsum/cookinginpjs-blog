@@ -1,9 +1,10 @@
 class Post < ActiveRecord::Base
+  acts_as_taggable # Alias for acts_as_taggable_on :tags
+  acts_as_taggable_on :herbivores, :carnivores
+
   validates_presence_of :body, :title
 
   has_many :comments
-
-  validates_presence_of :body, :title
 
   def content
   render_options = {
