@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
   def content
   render_options = {
     # will remove from the output HTML tags inputted by user
-    filter_html:     true,
+    filter_html:     false,
     # will insert <br /> tags in paragraphs where are newlines
     # (ignored by default)
     hard_wrap:       true,
