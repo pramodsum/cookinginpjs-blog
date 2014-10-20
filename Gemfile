@@ -61,3 +61,5 @@ gem 'rouge'
 gem 'ionicons-rails'
 
 gem 'acts-as-taggable-on'
+
+gem 'newrelic_rpm'
