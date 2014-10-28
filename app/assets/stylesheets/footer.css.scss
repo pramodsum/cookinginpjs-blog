@@ -1,11 +1,7 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 
-.footer {
-  width: 100%;
-  background-color: #ffec82;
-  padding: 0 15px;
-  position: absolute;
+footer, .footer {
   color: black;
 
   p {
@@ -17,4 +13,106 @@
   .ion-heart {
     color: pink;
   }
+
+  .border-box {
+    box-sizing: border-box;
+  }
+  .ribbon {
+    font-size: 16px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+    height: auto;
+    width: 92%;
+    background-color: #ffec82;
+    border-radius: 5px;
+    color: black;
+    padding: 0 0.25em;
+    padding-top: 0.25em;
+    /* Adjust to suit */
+    text-align: center;
+    margin: 0 auto;
+    /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+
+    a {
+      color: black;
+    }
+
+    a:hover, a:focus,
+    li:hover, li:focus{
+      background: #92b3d4 !important;
+      border-radius: 5px;
+      color: white;
+    }
+
+    li {
+      list-style:none;
+      display: inline-block;
+    }
+  }
+  .ribbon:before,
+  .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #f4e17c;
+    /*side ribbons*/
+    z-index: -1;
+  }
+  .ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+  }
+  .ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+  }
+  .ribbon .ribbon-content:before,
+  .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #f4e17c transparent transparent transparent;
+    bottom: -1em;
+  }
+  .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+  }
+  .ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+  }
+
+  @media (min-width: 768px) {
+    .ribbon {
+      max-width: 694px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .ribbon {
+      max-width: 896px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .ribbon {
+      max-width: 1000px;
+    }
+  }
+
+  .nav {
+    width: 100%;
+    margin-top: 1px;
+  }
+
+  .ribbon > div {
+    border: 1px dashed grey;
+    border-color: rgba(124, 124, 124, 0.5);
+    height: 40px;
+  }
+
 }
