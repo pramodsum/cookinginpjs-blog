@@ -1,0 +1,148 @@
+footer {
+  margin-top: 50px;
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  color: #eee;
+  text-align: center;
+}
+
+footer p {
+  line-height: 100px;
+}
+
+body {
+  @extend container;
+  background-image: url("https://s3-us-west-2.amazonaws.com/cookinginpjs/bg.jpg") !important;
+  background-repeat: repeat;
+  line-height: 1;
+  color: black;
+  background: white
+}
+
+img {
+  max-width: 100%;
+}
+
+ol,
+ul {
+  list-style: none
+}
+section,
+article,
+header,
+footer,
+nav,
+aside,
+hgroup {
+  display: block
+}
+.dropshadow-topbottom {
+  display: none
+}
+
+.nav {
+  margin: auto;
+}
+
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffec82;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+.btn-social :first-child {
+    left: 6px;
+    top: 6px;
+    bottom: 0;
+    line-height: 34px;
+    font-size: 34px;
+    text-align: center;
+    border-right: 0px !important;
+}
+.btn-social {
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #ffec82;
+    border-radius: 34px;
+    color: #92b3d4;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.btn-social:hover,
+.btn-social:focus {
+    outline: 0;
+    color: #92b3d4;
+    background: rgba(146, 179, 212, .1);
+}
+.btn-social i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+.btn-social:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-moz-keyframes pulse {
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+

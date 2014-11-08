@@ -1,0 +1,37 @@
+body {
+  background-image:url("https://s3-us-west-2.amazonaws.com/uppukhara/bg.png") !important;
+  background-repeat:repeat;
+  padding-top: 50px;
+}
+
+@font-face {
+    font-family: 'chalkboard';
+    src: url('chalkboardse-light-webfont.eot');
+    src: url('chalkboardse-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('chalkboardse-light-webfont.woff2') format('woff2'),
+         url('chalkboardse-light-webfont.woff') format('woff'),
+         url('chalkboardse-light-webfont.ttf') format('truetype'),
+         url('chalkboardse-light-webfont.svg#chalkboard_selight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+img {
+  margin: auto;
+  border-radius: 10px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#pinterest-widget span {
+  width:100%; overflow: hidden;
+}
+#pinterest-widget span span {
+  width:95%;
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: chalkboard;
+// }

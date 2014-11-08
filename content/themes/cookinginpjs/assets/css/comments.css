@@ -1,0 +1,9 @@
+.comments .btn {
+  background: #92b3d4;
+  color: white !important;
+}
+.comments .btn:hover, 
+.comments .btn:focus {
+  background: #ffec82 !important;
+  color: black !important;
+}

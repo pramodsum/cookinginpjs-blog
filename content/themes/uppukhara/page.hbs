@@ -1,0 +1,36 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+<div class="container">
+
+    <main class="content" role="main">
+
+        <article class="{{post_class}} post">
+        {{! Everything inside the #post tags pulls data from the post }}
+        {{#post}}
+            <div class="post-header"><br/></div>
+            <div class="post-content">
+                <center>
+                    <h2><h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
+                </center>
+                <hr>
+                <small>
+                  <p class="date">
+                    <span class="ion-calendar"></span>
+                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
+                  </p>
+                </small>
+                <div class="post-body post-excerpt">
+                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+                </div>
+                <footer class="post-meta">
+                    {{> "tags"}}
+                </footer>
+            </div>
+        {{/post}}
+        </article>
+
+    </main>
+</div>

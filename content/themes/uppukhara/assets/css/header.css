@@ -1,0 +1,85 @@
+#header{
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  background: #447294;
+  height: 350px;
+  color: #FFFFFF;
+}
+
+.header h1 {
+  font-size: 120px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.header .favicon{
+  background: url(../ico/favicon.png) no-repeat center top;
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: 145px;
+}
+
+.header p {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header-links {
+  margin: 0 auto;
+  list-style: none;
+  display: table;
+}
+
+.header-links li {
+  display: inline;
+  padding: 0 10px;
+  color: rgba(255,255,255,.25);
+}
+
+.header-links li a{
+  color: rgba(255,255,255,.25);
+}
+
+.header-links li a:hover{
+  color: #FFFFFF;
+}
+
+.navbar-nav, .navbar {
+  border-radius: 5px;
+}
+
+.navbar-nav li {
+  margin-top: 5px;
+}
+.navbar-nav a {
+  color: white !important;
+}
+
+.navbar-nav li:hover, 
+.navbar-nav li:focus {
+  background: rgba(254, 206, 56, 0.9);
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}

@@ -1,0 +1,11 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The main content area on the homepage }}
+<div class="container-fluid">
+  <div class="post-index">
+    <div class="posts-container">
+      {{> "loop"}}
+    </div>
+  </div>
+</div>

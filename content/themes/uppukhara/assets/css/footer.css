@@ -1,0 +1,24 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+.footer {
+  width: 100%;
+  padding: 0 15px;
+  bottom: 0;
+  position: absolute;
+  color: black;
+}
+
+  .footer p {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer.ion-heart {
+    color: pink;
+  }
+
+.footer {
+  position: relative;
+}

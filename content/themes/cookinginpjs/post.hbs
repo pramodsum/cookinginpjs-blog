@@ -1,0 +1,57 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+
+<div class="container-fluid">
+  <div class="post-index">
+    <div class="posts-container">
+
+       <article class="{{post_class}}" id="posts">
+           <center>
+              <p class="title">
+                <h1><a href="{{url}}">{{title}}</a></h1>
+              </p>
+              <p class="date">
+                <span class="ion-calendar"></span>
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
+              </p>
+            </center>
+            <hr>
+            <div>
+              {{content}}
+            </div>
+
+            <hr>
+            <div class="post-footer text-center">
+
+                <section id="tags">
+                    {{> "tags"}}
+                </section>
+
+                <section class="share">
+                    <h4>
+                        <br>Share this post<br>
+                        <small>
+                            <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn-social"><i class="ion-social-twitter animated"></i></a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn-social"><i class="ion-social-facebook animated"></i></a>
+                            <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn-social"><i class="ion-social-googleplus animated"></i></a>
+                            <a href="http://www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&description={{title}} | UppuKhara" class="btn-social"><i class="ion-social-pinterest animated"></i></a>
+                        </small>
+                    </h4>
+                </section>
+
+            </div>
+
+        </article>
+    </div>
+  </div>
+</div>
+
+{{!-- http://www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=SumNinjaCode - {{title}}" --}}
+
+{{/post}}
