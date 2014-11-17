@@ -13,10 +13,11 @@
       <p class="title">
         <h1><a href="{{url}}">{{title}}</a></h1>
       </p>
-        <p class="date">
-            <span class="ion-calendar"></span>
-            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
-        </p>
+      <p class="date">
+          <span class="ion-calendar"></span>
+          <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
+          by {{#author}} {{name}} {{/author}}
+      </p>
     </center>
   </p>
   <hr>
