@@ -43,3 +43,9 @@ img {
   background: #ffec82;
   border-radius: 2px;
 }
+
+.alert {
+  background: #ffec82;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
