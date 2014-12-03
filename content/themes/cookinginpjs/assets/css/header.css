@@ -85,11 +85,11 @@
 }
 
 .ribbon {
-  height: 87px;
+  max-width: 694px;
+  height: 157px;
 }
 .ribbon-content {
-  /*margin: 5px;*/
-  height: 77px !important; 
+  height: 145px !important; 
 }
 
 @media (min-width: 290px) {
