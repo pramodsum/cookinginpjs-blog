@@ -33,6 +33,12 @@
   }
 }
 
+@media (min-width: 860px) {
+  .post-index {
+    max-width: 654px;
+  }
+}
+
 @media (min-width: 992px) {
   .post-index {
     max-width: 860px;

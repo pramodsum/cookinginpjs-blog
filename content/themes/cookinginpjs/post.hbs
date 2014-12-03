@@ -16,10 +16,13 @@
               <p class="title">
                 <h1><a href="{{url}}">{{title}}</a></h1>
               </p>
+
+            <p class="date">
+                by {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}} <span class="author">{{author}}</span>
+            </p>
               <p class="date">
                 <span class="ion-calendar"></span>
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
-                by {{#author}} {{name}} {{/author}}
               </p>
             </center>
             <hr>
@@ -41,7 +44,6 @@
                             <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn-social"><i class="ion-social-twitter animated"></i></a>
                             <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn-social"><i class="ion-social-facebook animated"></i></a>
                             <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn-social"><i class="ion-social-googleplus animated"></i></a>
-                            <a href="http://www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&media=https://s3-us-west-2.amazonaws.com/cookinginpjs/cookinginpjs-pinterest.png&description={{title}} | Cooking In Pajamas" class="btn-social"><i class="ion-social-pinterest animated"></i></a>
                         </small>
                     </h4>
                 </section>

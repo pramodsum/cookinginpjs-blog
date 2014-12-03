@@ -24,6 +24,10 @@
   /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
 
+.ribbon ul {
+  overflow: hidden;
+}
+
   .ribbon a {
     color: black;
   }
@@ -80,21 +84,41 @@
   border-width: 1em 1em 0 0;
 }
 
+.ribbon {
+  height: 87px;
+}
+.ribbon-content {
+  /*margin: 5px;*/
+  height: 77px !important; 
+}
+
 @media (min-width: 768px) {
   .ribbon {
     max-width: 694px;
+    height: 89px;
+  }
+  .ribbon-content {
+    height: 77px !important; 
   }
 }
 
 @media (min-width: 992px) {
   .ribbon {
     max-width: 896px;
+    height: auto;
+  }
+  .ribbon-content {
+    height: auto !important; 
   }
 }
 
 @media (min-width: 1200px) {
   .ribbon {
     max-width: 1000px;
+    height: auto;
+  }
+  .ribbon-content {
+    height: auto !important; 
   }
 }
 

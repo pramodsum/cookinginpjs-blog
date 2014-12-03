@@ -33,3 +33,4 @@ bower.json
 test/
 
 node_modules/
+*.db
