@@ -1,6 +1,6 @@
-@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css";
-@import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
-@import "http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css";
+@import "bootstrap.css";
+@import "font-awesome.min.css";
+@import "ionicons.css";
 @import "//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.2.1/bootstrap-social.css";
 @import "comments.css";
 @import "github.css";
@@ -70,6 +70,20 @@ span.author {
 
 span.author a {
   color: #92b3d4;
+}
+
+#map {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tag-title {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 /*span.author a:hover, 
