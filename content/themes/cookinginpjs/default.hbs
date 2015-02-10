@@ -15,8 +15,18 @@
     <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cookinginpjs/favicon.ico">
 
     {{! Styles'n'Scripts }}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" >
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#myModal').appendTo("body").modal('show');
+            $("#myModal").css("z-index", "1500");
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
