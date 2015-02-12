@@ -87,6 +87,19 @@ span.author a {
   text-transform: capitalize;
 }
 
+a.btn.more-link {
+  padding: 5px 10px;
+  background-color: #ffec82;
+  color: #92b3d4;
+}
+
+a.btn.more-link:hover,
+a.btn.more-link:focus {
+  background-color: #92b3d4;
+  color: #ffec82;
+}
+
+
 /*span.author a:hover, 
 span.author a:focus {
   color: #92b3d4;
