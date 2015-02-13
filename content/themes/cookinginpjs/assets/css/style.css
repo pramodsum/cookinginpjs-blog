@@ -1,4 +1,4 @@
-/*@import "bootstrap.css";*/
+@import "bootstrap.min.css";
 @import "font-awesome.min.css";
 @import "ionicons.css";
 @import "//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.2.1/bootstrap-social.css";
@@ -9,6 +9,7 @@
 @import "header.css";
 @import "common.css";
 @import "animate.css";
+@import "recipe.css";
 
 .content{
   padding: 30px 0;
