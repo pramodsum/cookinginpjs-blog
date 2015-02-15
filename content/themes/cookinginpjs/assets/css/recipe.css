@@ -92,7 +92,8 @@
   margin-bottom: 30px;
 }
 
-.recipe .source p   {
+.recipe .source p ,
+.recipe .summary a  {
   color: #989a9b;
   font-size: 12.5px;
   font-style: italic;
@@ -105,4 +106,14 @@
 .recipe .instructions,
 .recipe .summary {
   font-size: 14px;
+}
+
+.recipe .recipe-header a {
+  text-decoration: none;
+}
+
+.recipe .recipe-header a:hover,
+.recipe .recipe-header a:focus {
+  color: #76cdd3;
+  text-shadow: 1px 1px #ff93a5;
 }
