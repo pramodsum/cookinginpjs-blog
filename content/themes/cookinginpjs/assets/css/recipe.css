@@ -100,3 +100,9 @@
   margin-bottom: 1px;
   clear: left
 }
+
+.recipe .ingredient,
+.recipe .instructions,
+.recipe .summary {
+  font-size: 14px;
+}
