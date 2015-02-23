@@ -8,36 +8,32 @@ First, I made an "alfredo" penne pasta. Here's the recipe for reference. I did m
 
 <div class="recipe">
   <div class="recipe-header">
-    <img src="https://farm8.staticflickr.com/7390/16401090985_f2b567095e_b.jpg" class="photo">
-    
     <span class="item">
-      <h2 class="fn">Acorn Alfredo Pasta</h2>
+      <h2 class="fn"><a href="http://kblog.lunchboxbunch.com/2010/10/acorn-squash-vegan-alfredo-sauce-kamut.html">Acorn Alfredo Pasta</a></h2>
     </span>
     <div class="summary" style="clear:left">
-      <p><em>Recipe originally posted at  http://kblog.lunchboxbunch.com/2010/10/acorn-squash-vegan-alfredo-sauce-kamut.html</em></p>
+      <p><em>Recipe by http://kblog.lunchboxbunch.com/2010/10/acorn-squash-vegan-alfredo-sauce-kamut.html</em></p>
     </div>
   </div>
   <div class="recipe-body">
     <div class="left">
       <h3 id="ingredients">Ingredients:</h3>
       <div class="ingredients"><h4>Acorn Alfredo Sauce</h4>
-        <ul>
-          <li class="ingredient">4 Cups roasted Acorn Squash (about 1 medium squash)</li>
-          <li class="ingredient">1 cup parsley (or fresh basil)</li>
-          <li class="ingredient">3/4 cup plain plant milk (almond/hemp/soy) (I used normal milk)</li>
-          <li class="ingredient">1/3 cup Nutritional Yeast Flakes (I just used some mozzerella cheese)</li>
-          <li class="ingredient">2-3 Tbsp EVOO</li>
-          <li class="ingredient">2-3 Tbsp Dijon Mustard</li>
-          <li class="ingredient">2-3 Tbsp apple cider vinegar</li>
-          <li class="ingredient">2 Tbsp roasted garlic</li>
-          <li class="ingredient">2 Tbsp dried Italian herbs (basil, oregano, thyme)</li>
-          <li class="ingredient">1 Tbsp maple syrup</li>
-          <li class="ingredient">1 tsp red pepper flakes or dash of cayenne</li>
-          <li class="ingredient">salt and pepper</li>
-          <br>
-          <li class="ingredient">1 bag pasta (any variety you choose)</li>
-          <li class="ingredient">2-3 cups mushrooms</li>
-        </ul>
+        <li class="ingredient">4 Cups roasted Acorn Squash (about 1 medium squash)</li>
+        <li class="ingredient">1 cup fresh basil</li>
+        <li class="ingredient">3/4 cup milk</li>
+        <li class="ingredient">1/3 cup mozzarella cheese</li>
+        <li class="ingredient">2-3 Tbsp EVOO</li>
+        <li class="ingredient">2-3 Tbsp Dijon Mustard</li>
+        <li class="ingredient">2-3 Tbsp apple cider vinegar</li>
+        <li class="ingredient">2 Tbsp roasted garlic</li>
+        <li class="ingredient">2 Tbsp dried Italian herbs (basil, oregano, thyme)</li>
+        <li class="ingredient">1 Tbsp maple syrup</li>
+        <li class="ingredient">1 tsp red pepper flakes or dash of cayenne</li>
+        <li class="ingredient">salt and pepper</li>
+        <br>
+        <li class="ingredient">1 bag pasta</li>
+        <li class="ingredient">2-3 cups mushrooms</li>
       </div>
     </div>
     <div class="right">
