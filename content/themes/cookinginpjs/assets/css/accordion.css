@@ -1,5 +1,3 @@
-
-
 #accordion {
  list-style: none;
  padding: 0 0 0 0;
@@ -32,7 +30,8 @@ ul#accordion {
 #mc_embed_signup{
  background:#fff; 
  clear:left; 
- font:16px dilemhandwrittenmedium; 
+ font:16px fox__catregular; 
+ text-transform: uppercase;
 }
 
 #mc_embed_signup h2 {
@@ -40,8 +39,8 @@ ul#accordion {
 }
 
 #mc_embed_signup .indicates-required {
- font-size :14px;
- line-height: 0.5;
+ font-size :12px;
+ /*line-height: 1;*/
 }
 
 #mc_embed_signup .mc-field-group {
@@ -68,11 +67,11 @@ ul#accordion {
 }
 
 #mc_embed_signup h2 {
- font-weight: bolder;
+ font-weight: normal;
 }
 
 .subscription.button {
- background: #cdf3ed;
+  background: rgba(146,179,212, 0.5);
 }
 
 #accordion a {

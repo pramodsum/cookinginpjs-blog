@@ -41,7 +41,7 @@ a {
 
 a:hover,
 a:focus {
- background: #ffec82;
+ background: rgba(255,236,130, 0.75);
  color: black;
 }
 
