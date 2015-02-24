@@ -1,16 +1,26 @@
 <header>
-  <div class="container">
-    <div id="masthead-frame-and-content-wrap">
-      <div class="alert alert-dismissible animated infinite pulse" role="alert">
-        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <center>Have you subscribed to our blog yet? If not, you should <a class="alert-link" href="http://eepurl.com/7YH6z">do it now</a> :)</center>
-      </div>
-      <a href="{{@blog.url}}">
-        <img src="{{asset "images/header.png"}}" width="955" height="544"></img>
-      </a>
+  <img src="{{asset "images/logo.png"}}" class="logo u-max-full-width animated bounceInDown">
+
+  <div class="animated bounceInUp">
+    {{!-- {{> "social"}} --}}
+
+    <div class="row links">
+      <center>
+        <img src="{{asset "images/divider.png"}}" class="u-max-full-width">
+        <ul>
+          <li><a href="{{@blog.url}}">HOME</a></li>
+          <li><a href="{{@blog.url}}/tag/herbivores">Herbivores</a></li>
+          <li><a href="{{@blog.url}}/tag/carnivores">Carnivores</a></li>
+          <li><a href="{{@blog.url}}/tag/desserts">Desserts</a></li>
+          <li><a href="{{@blog.url}}/tag/giggle-juice">Giggle Juice</a></li>
+          <li><a href="{{@blog.url}}/tag/eating-out">Eating Out</a></li>
+          <li><a href="http://eepurl.com/7YH6z">Subscribe</a></li>
+          <li><a href="{{@blog.url}}/about">About</a></li>
+        </ul>
+        <img src="{{asset "images/divider.png"}}" class="u-max-full-width">
+      </center>
     </div>
-      <div class="row">
-        {{> "navbar"}}
-      </div>
+
+    {{> "collections"}}
   </div>
 </header>

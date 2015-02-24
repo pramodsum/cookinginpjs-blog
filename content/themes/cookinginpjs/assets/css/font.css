@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'dilemhandwrittenmedium';
+    src: url('../fonts/DilemHandwritten-webfont.eot');
+    src: url('../fonts/DilemHandwritten-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DilemHandwritten-webfont.woff2') format('woff2'),
+         url('../fonts/DilemHandwritten-webfont.woff') format('woff'),
+         url('../fonts/DilemHandwritten-webfont.ttf') format('truetype'),
+         url('../fonts/DilemHandwritten-webfont.svg#dilemhandwrittenmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fox__catregular';
+    src: url('../fonts/Fox & Cat-webfont.eot');
+    src: url('../fonts/Fox & Cat-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Fox & Cat-webfont.woff2') format('woff2'),
+         url('../fonts/Fox & Cat-webfont.woff') format('woff'),
+         url('../fonts/Fox & Cat-webfont.ttf') format('truetype'),
+         url('../fonts/Fox & Cat-webfont.svg#fox__catregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coalhandlukecoalhandluketrial';
+    src: url('../fonts/CoalhandLuke TRIAL-webfont.eot');
+    src: url('../fonts/CoalhandLuke TRIAL-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CoalhandLuke TRIAL-webfont.woff2') format('woff2'),
+         url('../fonts/CoalhandLuke TRIAL-webfont.woff') format('woff'),
+         url('../fonts/CoalhandLuke TRIAL-webfont.ttf') format('truetype'),
+         url('../fonts/CoalhandLuke TRIAL-webfont.svg#coalhandlukecoalhandluketrial') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'grutchshadedregular';
+    src: url('../fonts/GrutchShaded-webfont.eot');
+    src: url('../fonts/GrutchShaded-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GrutchShaded-webfont.woff2') format('woff2'),
+         url('../fonts/GrutchShaded-webfont.woff') format('woff'),
+         url('../fonts/GrutchShaded-webfont.ttf') format('truetype'),
+         url('../fonts/GrutchShaded-webfont.svg#grutchshadedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media all and (min-width: 50px) {
+  .collections, .links {
+    font-size:1.4em;
+  }
+}
+    
+@media all and (min-width: 545px) {
+  .collections, .links {
+    font-size:1.0em;
+  }
+}

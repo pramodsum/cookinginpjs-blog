@@ -1,0 +1,80 @@
+
+
+#accordion {
+ list-style: none;
+ padding: 0 0 0 0;
+ /*width: 170px;*/
+}
+ul#accordion {
+ margin-bottom: 0;
+}
+#accordion ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+#accordion ul{
+ display: none;
+}
+#accordion ul li {
+ font-weight: normal;
+ cursor: auto;
+ background-color: #fff;
+ padding: 0 0 0 7px;
+ width: 100%;
+}
+#accordion a {
+ text-decoration: none;
+ margin: 0 auto;
+ width: 100%;
+}
+
+#mc_embed_signup{
+ background:#fff; 
+ clear:left; 
+ font:16px dilemhandwrittenmedium; 
+}
+
+#mc_embed_signup h2 {
+ margin: 0;
+}
+
+#mc_embed_signup .indicates-required {
+ font-size :14px;
+ line-height: 0.5;
+}
+
+#mc_embed_signup .mc-field-group {
+ padding-bottom: 1%;
+}
+
+#mc_embed_signup input {
+ font-family: Raleway;
+}
+
+#mc_embed_signup .button {
+ background: #cdf3ed;
+ color: black;
+}
+
+#mc_embed_signup .button:hover {
+ background: pink;
+ color: white;
+}
+
+#mc_embed_signup form {
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+
+#mc_embed_signup h2 {
+ font-weight: bolder;
+}
+
+.subscription.button {
+ background: #cdf3ed;
+}
+
+#accordion a {
+ margin-bottom: 1rem; 
+}
