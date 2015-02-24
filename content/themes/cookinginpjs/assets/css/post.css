@@ -1,4 +1,9 @@
-.post-title a {
+.post-title a, .post-title {
   font-family: grutchshadedregular;
   font-weight: 100;
+  color: #505050;
+}
+
+h1.post-title {
+  font-size: 4rem;
 }
