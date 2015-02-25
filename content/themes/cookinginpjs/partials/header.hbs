@@ -1,16 +1,17 @@
 <header>
-  <div class="container">
-    <div id="masthead-frame-and-content-wrap">
-      <div class="alert alert-dismissible animated infinite pulse" role="alert">
-        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <center>Have you subscribed to our blog yet? If not, you should <a class="alert-link" href="http://eepurl.com/7YH6z">do it now</a> :)</center>
-      </div>
+  <div class="row">
+    <div class="col-xs-10">
       <a href="{{@blog.url}}">
-        <img src="{{asset "images/header.png"}}" width="955" height="544"></img>
+        <img src="{{asset "images/logo.png"}}">
       </a>
     </div>
-      <div class="row">
-        {{> "navbar"}}
-      </div>
+    <div class="col-xs-2">
+      <a href="{{@blog.url}}">
+        <img src="{{asset "images/pants.png"}}">
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    {{> "navbar2"}}
   </div>
 </header>

@@ -44,36 +44,47 @@ ul.social-fixed {
     color: #dd4b39;
   }
 
+.main-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
 .post-index{
   margin: auto;
   background: white;
-  width: 91%;
-  max-width: 935px;
+  /*width: 91%;*/
+  /*max-width: 935px;*/
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
-  .post-index .posts-container {
-    padding: 2em !important;
+  .post-index .col-sm-3 ul {
+    margin: 0;
+    padding: 0;
   }
-      .post-index .posts-container h1 a {
+
+  .post-index {
+    padding: 1rem 2em !important;
+  }
+      .post-index h1 a {
         color: black;
+        text-transform: uppercase;
+        /*font-family: coalhandlukecoalhandluketrial;*/
       }
 
-      .post-index .posts-container h1 a:hover,
-      .post-index .posts-container h1 a:focus {
+      .post-index h1 a:hover,
+      .post-index h1 a:focus {
         color: #ffec82;
         text-decoration: none;
         text-shadow: 1px 1px black;
       }
 
-    .post-index .posts-container .date {
+    .post-index .date {
       color: #92b3d4;
     }
   }
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .post-index {
     max-width: 654px;
   }
@@ -95,7 +106,7 @@ ul.social-fixed {
   .post-index {
     max-width: 965px;
   }
-}
+}*/
 
 .spacer {
   margin-top:50px;

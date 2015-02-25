@@ -13,7 +13,7 @@ footer p {
 
 body {
   @extend container;
-  background-image: url("../images/bg.jpg") !important;
+  /*background-image: url("../images/bg.jpg") !important;*/
   background-repeat: repeat;
   line-height: 1;
   color: black;

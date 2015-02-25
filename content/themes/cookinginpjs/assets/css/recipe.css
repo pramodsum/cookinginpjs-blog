@@ -10,7 +10,7 @@
 }
 
 .recipe-header {
-  font-family: "Solomon", Arial, Helvetica, Geneva, sans-serif;
+  /*font-family: "Solomon", Arial, Helvetica, Geneva, sans-serif;*/
   background-color: #ffec82;
   padding: 30px 30px 0;
   overflow: hidden;
@@ -62,7 +62,7 @@
 .recipe .time           {
   color: #92b3d4;
   font-size: 11px;
-  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  /*font-family: "Solomon", Arial, Helvetica, sans-serif;*/
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.07em;
