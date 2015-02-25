@@ -207,10 +207,11 @@ div.container-fluid {
   max-width: 1000px;
 }
 
-/*span.author a:hover, 
-span.author a:focus {
-  color: #92b3d4;
-  text-shadow: 2px 2px #ffec82 !important;
-  border-radius: 5px;
-  text-decoration: none;
-}*/
+img.about.img-circle {
+  max-width: 150px;
+}
+
+.footer {
+  text-transform: uppercase;
+  font-size: 12px;
+}

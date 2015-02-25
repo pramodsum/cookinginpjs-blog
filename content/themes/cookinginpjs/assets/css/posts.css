@@ -127,3 +127,7 @@ ul.social-fixed {
 small {
   color: #92b3d4;
 }
+
+a.btn.more-link {
+  padding-bottom: 0 !important;
+}

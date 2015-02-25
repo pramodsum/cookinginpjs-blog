@@ -44,10 +44,6 @@ ul.nav.navbar-nav {
   text-transform: uppercase;
 }
 
-ul.nav.navbar-nav li a {
-  padding: 15px 5px;
-}
-
 .sidebar ul {
   padding-left: 0;
 }
@@ -60,6 +56,10 @@ ul.nav.navbar-nav li a {
   padding: 0;
 }
 
+ul.nav.navbar-nav li a {
+  padding: 7px 5px;
+}
+
 @media (min-width: 768px) {
   .navbar .navbar-nav {
     display: inline-block;
@@ -69,5 +69,9 @@ ul.nav.navbar-nav li a {
 
   .navbar .navbar-collapse {
     text-align: center;
+  }
+
+  ul.nav.navbar-nav li a {
+    padding: 15px 5px;
   }
 }

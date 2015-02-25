@@ -16,8 +16,14 @@
   overflow: hidden;
 }
 
+.recipe h2.fn{
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
 .recipe-body {
-  padding: 28px 30px;
+  padding: 20px 30px;
   border: 1px solid #e1e2e2;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -33,6 +39,7 @@
 .recipe h3                    {
   color: #ff93a5;
   margin: 0 0 13px;
+  margin-bottom: 5px;
   clear: left;
 }
 
@@ -54,8 +61,7 @@
 }
 
 .recipe .recipemeta, .recipe .summary   {
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin: 5px auto;
   clear: left
 }
 
@@ -89,7 +95,7 @@
 }
 
 .recipe .left {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .recipe .source p ,
@@ -116,4 +122,16 @@
 .recipe .recipe-header a:focus {
   color: #76cdd3;
   text-shadow: 1px 1px #ff93a5;
+}
+
+.recipe .instructions {
+  margin-bottom: 0;
+}
+
+.recipe li {
+  margin-bottom: 5px;
+}
+
+.recipe h4 {
+  margin-top: 10px;
 }
