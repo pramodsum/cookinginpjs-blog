@@ -25,6 +25,17 @@
   padding: 20px 0;
 }
 
+a {
+  color: #92b3d4;
+  text-decoration: none;
+}
+
+a:hover, 
+a:focus {
+  color: #92b3d4;
+  text-decoration: bold;
+}
+
 img {
   margin: auto;
   border-radius: 10px;

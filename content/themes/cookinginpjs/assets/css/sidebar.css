@@ -17,7 +17,8 @@
 }
 
 .sidebar form,
-.sidebar button {
+.sidebar button,
+#mc-embedded-subscribe {
   text-transform: uppercase;
 }
 
@@ -27,4 +28,17 @@
 
 .sidebar img.divider {
   padding-top: 15px;
+}
+
+#mc-embedded-subscribe {
+  padding-bottom: 0;
+  background: #92b3d4;
+  color: white;
+  border: none;
+}
+
+#mc-embedded-subscribe:hover,
+#mc-embedded-subscribe:focus {
+  background: #ffec82;
+  color: black;
 }
