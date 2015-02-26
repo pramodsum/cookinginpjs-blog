@@ -56,8 +56,13 @@ ul.social-fixed {
   .post-index {
     padding: 2em 0 !important;
   }
+    .post-index h1 {
+      margin-bottom: 0;
+    }
       .post-index h1 a {
         color: black;
+        /*font-family: end_of_the_dreamregular;*/
+        text-transform: uppercase;
       }
 
       .post-index h1 a:hover,

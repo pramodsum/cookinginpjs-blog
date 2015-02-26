@@ -21,56 +21,54 @@
     <div class="posts-container">
 
        <article class="{{post_class}}" id="posts">
-           <center>
-              <p class="title">
-                <h1>{{title}}</h1>
-              </p>
+          <div class="text-center">
+            <h1>{{title}}</h1>
 
-            <p class="date">
+            <div class="date">
                 by {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}} <span class="author">{{author}}</span>
-            </p>
-              <p class="date">
-                <span class="ion-calendar"></span>
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
-              </p>
-            </center>
-            <hr>
-            <div>
-              {{content}}
             </div>
+            <div class="date">
+              <span class="ion-calendar"></span>
+              <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
+            </div>
+          </div>
+          <hr>
+          <div>
+            {{content}}
+          </div>
 
-            <hr>
-            <div class="post-footer text-center">
+          <hr>
+          <div class="post-footer text-center">
 
-                <section id="tags">
-                    {{> "tags"}}
-                </section>
+              <section id="tags">
+                  {{> "tags"}}
+              </section>
 
-                <section class="share">
-                    <h4>
-                        <br>Share this post<br>
-                        <small>
-                            <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn-social"><i class="ion-social-twitter animated"></i></a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn-social"><i class="ion-social-facebook animated"></i></a>
-                            <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn-social"><i class="ion-social-googleplus animated"></i></a>
-                        </small>
-                    </h4>
-                </section>
-                <section class="comments">
-                  <div id="disqus_thread"></div>
-                    <script type="text/javascript">
-                        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                        var disqus_shortname = 'cookinginpjs'; // required: replace example with your forum shortname
+              <section class="share">
+                  <h4>
+                      <br>Share this post<br>
+                      <small>
+                          <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn-social"><i class="ion-social-twitter animated"></i></a>
+                          <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn-social"><i class="ion-social-facebook animated"></i></a>
+                          <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn-social"><i class="ion-social-googleplus animated"></i></a>
+                      </small>
+                  </h4>
+              </section>
+              <section class="comments">
+                <div id="disqus_thread"></div>
+                  <script type="text/javascript">
+                      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                      var disqus_shortname = 'cookinginpjs'; // required: replace example with your forum shortname
 
-                        /* * * DON'T EDIT BELOW THIS LINE * * */
-                        (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                </section>
+                      /* * * DON'T EDIT BELOW THIS LINE * * */
+                      (function() {
+                          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                      })();
+                  </script>
+                  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              </section>
 
             </div>
 

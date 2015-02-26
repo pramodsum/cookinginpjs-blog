@@ -10,6 +10,7 @@
 @import "common.css";
 @import "animate.css";
 @import "recipe.css";
+@import "sidebar.css";
 
 @font-face {
     font-family: 'dilemhandwrittenmedium';
@@ -58,6 +59,19 @@
          url('../fonts/GrutchShaded-webfont.woff') format('woff'),
          url('../fonts/GrutchShaded-webfont.ttf') format('truetype'),
          url('../fonts/GrutchShaded-webfont.svg#grutchshadedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'end_of_the_dreamregular';
+    src: url('../fonts/End of the dream-webfont.eot');
+    src: url('../fonts/End of the dream-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/End of the dream-webfont.woff2') format('woff2'),
+         url('../fonts/End of the dream-webfont.woff') format('woff'),
+         url('../fonts/End of the dream-webfont.ttf') format('truetype'),
+         url('../fonts/End of the dream-webfont.svg#end_of_the_dreamregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
