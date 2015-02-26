@@ -5,15 +5,16 @@
 
 {{! Everything inside the #post tags pulls data from the post }}
 
+{{#post}}
+
 <!-- more visible social buttons for post -->
 <ul class="social-fixed">
   <li><a class="btn subscribe" href="http://eepurl.com/7YH6z"><i class="ion ion-social-rss"></i></a></li>
+  <li><a class="btn comments" href="{{url}}#disqus_thread"><i class="ion ion-chatbubble"></i></a></li>
   <li><a class="btn twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"><i class="ion ion-social-twitter"></i></a></li>
   <li><a class="btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"><i class="ion ion-social-facebook"></i></a></li>
   <li><a class="btn gplus" href="https://plus.google.com/share?url={{url absolute="true"}}"><i class="ion ion-social-googleplus"></i></a></li>
 </ul>
-
-{{#post}}
 
 
 <div class="container-fluid">

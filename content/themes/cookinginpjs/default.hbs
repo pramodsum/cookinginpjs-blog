@@ -34,7 +34,14 @@
 
     {{> "header"}}
     <div class="main-content">
-      {{{body}}}
+      <div class="container-fluid post-index">
+        <div class="col-xs-3 sidebar text-center">
+          {{> "sidebar"}}
+        </div>
+        <div class="col-xs-9">
+          {{{body}}}
+        </div>
+      </div>
     </div>
     <br><br>
 

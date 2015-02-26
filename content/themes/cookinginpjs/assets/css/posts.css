@@ -1,6 +1,8 @@
 ul.social-fixed {
   position: fixed;
-  bottom: 100px;
+  top: 37%;
+  bottom: 37%;
+  left: 0;
   z-index: 15000;
   padding-left: 0px
 }
@@ -14,7 +16,16 @@ ul.social-fixed {
   .social-fixed a.btn:focus {
     background: white;
     color: #92b3d4;
-    border-color: black;
+    /*border-color: black;*/
+  }
+  .social-fixed a.btn.comments {
+    background: #92b3d4;
+    color: white;
+  }
+  .social-fixed a.btn.comments:hover,
+  .social-fixed a.btn.comments:focus {
+    background: white;
+    color: #ffec82;
   }
   .social-fixed a.btn.twitter {
     background: #55acee;

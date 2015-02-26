@@ -2,11 +2,4 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The main content area on the homepage }}
-<div class="container-fluid post-index">
-  <div class="col-xs-3 sidebar text-center">
-    {{> "sidebar"}}
-  </div>
-  <div class="col-xs-9">
-    {{> "loop"}}
-  </div>
-</div>
+{{> "loop"}}
