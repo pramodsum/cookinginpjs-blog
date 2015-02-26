@@ -10,16 +10,24 @@
 <article class="{{post_class}} post" id="posts">
   <p>
     <center class="post-header">
-      <p class="title">
+      <div class="title">
         <h1><a href="{{url}}">{{title}}</a></h1>
-      </p>
-      <p class="date">
+      </div>
+
+      <div class="post-meta date">
+          <i class="ion-pricetag"></i> {{tags}}
+          <i class="ion-calendar"></i> <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+          <i class="ion-chatbubble"></i> <a href="{{url}}#disqus_thread">Comments</a>
+          <br>
+          by {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}} <span class="author"><a href="{{author.website}}">{{author.name}}</a></a></span>
+      </div>
+      {{!-- <p class="date">
         by {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}} <span class="author"><a href="{{author.website}}">{{author.name}}</a></a></span>
       </p>
       <p class="date">
           <span class="ion-calendar"></span>
           <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
-      </p>
+      </p> --}}
     </center>
   </p>
   <hr>
@@ -28,11 +36,11 @@
   </p>
   <br>
 
-  <div class="post-footer text-center">
+{{!--   <div class="post-footer text-center">
     <section id="tags">
       {{> "tags"}}
     </section>
-  </div>
+  </div> --}}
 </article>
 {{/foreach}}
 </div>

@@ -26,7 +26,8 @@
 .recipe h2                     {
   color: #ffffff;
   text-shadow: 1px 1px #92b3d4;
-  margin: 0 0 15px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .recipe h3                    {
@@ -53,8 +54,7 @@
 }
 
 .recipe .recipemeta, .recipe .summary   {
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin-top: 5px auto;
   clear: left
 }
 
@@ -114,4 +114,8 @@
 .recipe .recipe-header a:focus {
   color: #76cdd3;
   text-shadow: 1px 1px #ff93a5;
+}
+
+li.ingredient {
+  padding-bottom: 5px;
 }
