@@ -4,18 +4,17 @@ var UploadUi,
     upload,
     Ghost = ghostPaths();
 
-
 UploadUi = function ($dropzone, settings) {
     var $url = '<div class="js-url"><input class="url js-upload-url" type="url" placeholder="http://"/></div>',
         $cancel = '<a class="image-cancel js-cancel" title="Delete"><span class="hidden">Delete</span></a>',
         $progress =  $('<div />', {
-            'class' : 'js-upload-progress progress progress-success active',
-            'role': 'progressbar',
+            class: 'js-upload-progress progress progress-success active',
+            role: 'progressbar',
             'aria-valuemin': '0',
             'aria-valuemax': '100'
         }).append($('<div />', {
-            'class': 'js-upload-progress-bar bar',
-            'style': 'width:0%'
+            class: 'js-upload-progress-bar bar',
+            style: 'width:0%'
         }));
 
     $.extend(this, {
@@ -23,9 +22,9 @@ UploadUi = function ($dropzone, settings) {
             var self = this;
 
             function showImage(width, height) {
-                $dropzone.find('img.js-upload-target').attr({'width': width, 'height': height}).css({'display': 'block'});
+                $dropzone.find('img.js-upload-target').attr({width: width, height: height}).css({display: 'block'});
                 $dropzone.find('.fileupload-loading').remove();
-                $dropzone.css({'height': 'auto'});
+                $dropzone.css({height: 'auto'});
                 $dropzone.delay(250).animate({opacity: 100}, 1000, function () {
                     $('.js-button-accept').prop('disabled', false);
                     self.init();
@@ -45,11 +44,11 @@ UploadUi = function ($dropzone, settings) {
 
             function preLoadImage() {
                 var $img = $dropzone.find('img.js-upload-target')
-                    .attr({'src': '', 'width': 'auto', 'height': 'auto'});
+                    .attr({src: '', width: 'auto', height: 'auto'});
 
-                $progress.animate({'opacity': 0}, 250, function () {
+                $progress.animate({opacity: 0}, 250, function () {
                     $dropzone.find('span.media').after('<img class="fileupload-loading"  src="' + Ghost.subdir + '/ghost/img/loadingcat.gif" />');
-                    if (!settings.editor) {$progress.find('.fileupload-loading').css({'top': '56px'}); }
+                    if (!settings.editor) {$progress.find('.fileupload-loading').css({top: '56px'}); }
                 });
                 $dropzone.trigger('uploadsuccess', [result]);
                 $img.one('load', function () {
@@ -73,7 +72,7 @@ UploadUi = function ($dropzone, settings) {
                     $dropzone.trigger('uploadstart', [$dropzone.attr('id')]);
                     $dropzone.find('span.media, div.description, a.image-url, a.image-webcam')
                         .animate({opacity: 0}, 250, function () {
-                            $dropzone.find('div.description').hide().css({'opacity': 100});
+                            $dropzone.find('div.description').hide().css({opacity: 100});
                             if (settings.progressbar) {
                                 $dropzone.find('div.js-fail').after($progress);
                                 $progress.animate({opacity: 100}, 250);
@@ -85,7 +84,7 @@ UploadUi = function ($dropzone, settings) {
                 progressall: function (e, data) {
                     /*jshint unused:false*/
                     var progress = parseInt(data.loaded / data.total * 100, 10);
-                    if (!settings.editor) {$progress.find('div.js-progress').css({'position': 'absolute', 'top': '40px'}); }
+                    if (!settings.editor) {$progress.find('div.js-progress').css({position: 'absolute', top: '40px'}); }
                     if (settings.progressbar) {
                         $dropzone.trigger('uploadprogress', [progress, data]);
                         $progress.find('.js-upload-progress-bar').css('width', progress + '%');
@@ -134,9 +133,9 @@ UploadUi = function ($dropzone, settings) {
             if (!$dropzone.find('a.image-url')[0]) {
                 $dropzone.append('<a class="image-url" title="Add image from URL"><span class="hidden">URL</span></a>');
             }
-//                if (!$dropzone.find('a.image-webcam')[0]) {
-//                    $dropzone.append('<a class="image-webcam" title="Add image from webcam"><span class="hidden">Webcam</span></a>');
-//                }
+           // if (!$dropzone.find('a.image-webcam')[0]) {
+           //     $dropzone.append('<a class="image-webcam" title="Add image from webcam"><span class="hidden">Webcam</span></a>');
+           // }
         },
 
         removeExtras: function () {
@@ -145,8 +144,10 @@ UploadUi = function ($dropzone, settings) {
 
         initWithDropzone: function () {
             var self = this;
-            //This is the start point if no image exists
-            $dropzone.find('img.js-upload-target').css({'display': 'none'});
+
+            // This is the start point if no image exists
+            $dropzone.find('img.js-upload-target').css({display: 'none'});
+            $dropzone.find('div.description').show();
             $dropzone.removeClass('pre-image-uploader image-uploader-url').addClass('image-uploader');
             this.removeExtras();
             this.buildExtras();
@@ -170,6 +171,7 @@ UploadUi = function ($dropzone, settings) {
             $dropzone.find('.js-cancel').on('click', function () {
                 $dropzone.find('.js-url').remove();
                 $dropzone.find('.js-fileupload').removeClass('right');
+                $dropzone.trigger('imagecleared');
                 self.removeExtras();
                 self.initWithDropzone();
             });
@@ -203,17 +205,20 @@ UploadUi = function ($dropzone, settings) {
                 $dropzone.find('.js-fileupload').removeClass('right');
                 self.initWithDropzone();
             });
-
         },
+
         initWithImage: function () {
             var self = this;
+
             // This is the start point if an image already exists
             $dropzone.removeClass('image-uploader image-uploader-url').addClass('pre-image-uploader');
             $dropzone.find('div.description').hide();
+            $dropzone.find('img.js-upload-target').show();
             $dropzone.append($cancel);
             $dropzone.find('.js-cancel').on('click', function () {
-                $dropzone.find('img.js-upload-target').attr({'src': ''});
+                $dropzone.find('img.js-upload-target').attr({src: ''});
                 $dropzone.find('div.description').show();
+                $dropzone.trigger('imagecleared');
                 $dropzone.delay(2500).animate({opacity: 100}, 1000, function () {
                     self.init();
                 });
@@ -236,10 +241,16 @@ UploadUi = function ($dropzone, settings) {
             } else {
                 this.initWithImage();
             }
+        },
+
+        reset: function () {
+            $dropzone.find('.js-url').remove();
+            $dropzone.find('.js-fileupload').removeClass('right');
+            this.removeExtras();
+            this.initWithDropzone();
         }
     });
 };
-
 
 upload = function (options) {
     var settings = $.extend({
@@ -247,11 +258,13 @@ upload = function (options) {
         editor: false,
         fileStorage: true
     }, options);
+
     return this.each(function () {
         var $dropzone = $(this),
             ui;
 
         ui = new UploadUi($dropzone, settings);
+        this.uploaderUi = ui;
         ui.init();
     });
 };
