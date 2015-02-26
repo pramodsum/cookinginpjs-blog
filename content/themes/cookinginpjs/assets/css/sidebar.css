@@ -3,6 +3,20 @@
   margin: 0;
 }
 
-.sidebar h2 {
+.sidebar h1, 
+.sidebar h2, 
+.sidebar h3, 
+.sidebar h4, 
+.sidebar h5, 
+.sidebar h6 {
   font-family: end_of_the_dreamregular;
+}
+
+.sidebar form,
+.sidebar button {
+  text-transform: uppercase;
+}
+
+.sidebar input {
+  text-align: center;
 }

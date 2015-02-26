@@ -1,15 +1,25 @@
-{{!-- <div class="alert alert-dismissible animated infinite pulse" role="alert">
-  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-  <center>Have you subscribed to our blog yet? If not, you should <a class="alert-link" href="http://eepurl.com/7YH6z">do it now</a> :)</center>
-</div> --}}
+<h3>Hello & Welcome</h3>
+<p><img class="img-responsive img-circle" src="{{asset "images/about.jpg"}}"></p>
+<p>
+  This is the blog of Sumu and Anu, wayfaring adventurers and aspiring home cooks.
+</p>
+<a href="{{@blog.url}}/about">More about us!</a>
 
-<h2>Other Blogs</h2>
+<hr>
+
+<h3>Subscribed yet?</h3>
+<p>Sign up to receive updates straight in your inbox!</p>
+{{!-- <p>If not, you should <a class="alert-link" href="http://eepurl.com/7YH6z">do it now</a></p> --}}
+<form>
+  <div class="form-group">
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<hr>
+
+<h3>Other Blogs</h3>
 <ul>
   <li><a href="http://uppukhara.com">UPPUKHARA</a></li>
 </ul>
-<hr>
-<h2><a href="{{@blog.url}}/about">About</a></h2>
-<p>
-  <strong>Hello and welcome :)</strong>
-  This is the blog of Sumu and Anu, wayfaring adventurers and aspiring home cooks.
-</p>
