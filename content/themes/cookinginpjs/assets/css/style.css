@@ -104,6 +104,11 @@ a.btn.more-link:focus {
   font-size: 16px;
 }
 
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+
 /*span.author a:hover, 
 span.author a:focus {
   color: #92b3d4;

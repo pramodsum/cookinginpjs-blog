@@ -53,25 +53,23 @@ ul.social-fixed {
   border-bottom-right-radius: 5px;
 }
 
-  .post-index .posts-container {
-    padding: 2em !important;
+  .post-index {
+    padding: 2em 0 !important;
   }
-      .post-index .posts-container h1 a {
+      .post-index h1 a {
         color: black;
       }
 
-      .post-index .posts-container h1 a:hover,
-      .post-index .posts-container h1 a:focus {
+      .post-index h1 a:hover,
+      .post-index h1 a:focus {
         color: #ffec82;
         text-decoration: none;
         text-shadow: 1px 1px black;
       }
 
-    .post-index .posts-container .date {
+    .post-index .date {
       color: #92b3d4;
     }
-  }
-}
 
 @media (min-width: 768px) {
   .post-index {
