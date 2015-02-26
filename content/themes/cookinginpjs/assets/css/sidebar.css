@@ -20,3 +20,7 @@
 .sidebar input {
   text-align: center;
 }
+
+.sidebar img.divider {
+  padding-top: 15px;
+}

@@ -29,6 +29,12 @@ ol,
 ul {
   list-style: none
 }
+
+#posts ol,
+#posts ul {
+  list-style: square url("../images/bullet.png");
+}
+
 section,
 article,
 header,
