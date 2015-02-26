@@ -139,7 +139,7 @@ h6 { font-size: 0.5rem; }
 }
 
 @media (min-width: 1200px) {
-  body { font-size: 2rem; }
+  body { font-size: 1.7rem; }
   h1 { font-size: 4rem; }
   h2 { font-size: 3rem; }
   h3 { font-size: 2.5rem; }

@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.sidebar ul li {
+  padding-top: 7px;
+}
+
 .sidebar h1, 
 .sidebar h2, 
 .sidebar h3, 
