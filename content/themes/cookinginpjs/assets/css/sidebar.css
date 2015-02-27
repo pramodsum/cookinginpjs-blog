@@ -43,10 +43,35 @@
 #mc-embedded-subscribe:focus,
 #search-submit:hover,
 #search-submit:focus {
-  background: #ffec82;
+  background: #FFEC96;
   color: black;
 }
 
 #search-field {
   margin-bottom: 10px
+}
+
+.subscribe-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  z-index: 15000;
+  background: #FFEC96;
+  padding: 10px;
+  max-width: 250px;
+  border: 1px black;
+  border-radius: 5px;
+}
+
+.subscribe-bottom>div {
+  border: 1px dashed grey;
+  border-color: rgba(124, 124, 124, 0.5);
+  /*height: 40px;*/
+  padding: 10px;
+  /*padding-right: 20px;*/
+}
+
+.subscribe-bottom button.close {
+  right: 0px;
+  top: -5px;
 }

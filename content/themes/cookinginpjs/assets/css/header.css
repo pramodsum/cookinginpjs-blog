@@ -66,8 +66,8 @@
   border-left-width: 1.5em;
   border-right-color: transparent;
 }
-.ribbon .ribbon-content:before,
-.ribbon .ribbon-content:after {
+.ribbon-content:before,
+.ribbon-content:after {
   content: "";
   position: absolute;
   display: block;
@@ -75,11 +75,11 @@
   border-color: #f4e17c transparent transparent transparent;
   bottom: -1em;
 }
-.ribbon .ribbon-content:before {
+.ribbon-content:before {
   left: 0;
   border-width: 1em 0 0 1em;
 }
-.ribbon .ribbon-content:after {
+.ribbon-content:after {
   right: 0;
   border-width: 1em 1em 0 0;
 }
