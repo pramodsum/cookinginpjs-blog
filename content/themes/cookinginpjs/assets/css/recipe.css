@@ -10,7 +10,7 @@
 }
 
 .recipe-header {
-  background-color: #ffec82;
+  background-color: #FFEC96;
   padding: 30px 30px 20px;
   overflow: hidden;
 }
@@ -26,7 +26,8 @@
 .recipe h2                     {
   color: #ffffff;
   text-shadow: 1px 1px #92b3d4;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
   text-transform: uppercase;
 }
 
