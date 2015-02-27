@@ -134,3 +134,7 @@ small {
 .post-index h1 {
   text-transform: uppercase;
 }
+
+.post-meta {
+  color: #92b3d4;
+}
