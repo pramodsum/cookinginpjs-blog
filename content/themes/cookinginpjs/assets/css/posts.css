@@ -136,5 +136,5 @@ small {
 }
 
 div.post-meta.date {
-  color: #92b3d4;
+  color: #92b3d4 !important;
 }
