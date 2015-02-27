@@ -13,7 +13,7 @@
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
   height: auto;
   width: 92%;
-  background-color: #FFEC96;
+  background-color: #FFEC96 !important;
   border-radius: 5px;
   color: black;
   padding: 0 0.25em;
