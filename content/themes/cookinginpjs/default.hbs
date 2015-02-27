@@ -18,14 +18,8 @@
 
     {{! Styles'n'Scripts }}
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
-    <script src="{{asset "js/bootstrap.min.js"}}"></script>
+    <script src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#myModal').appendTo("body").modal('show');
-            $("#myModal").css("z-index", "1500");
-        });
-    </script>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -39,6 +33,7 @@
           {{> "sidebar"}}
         </div>
         <div class="col-xs-9">
+          <section id="results" class="text-center"></section>
           {{{body}}}
         </div>
       </div>
@@ -52,6 +47,7 @@
 
     {{! JavaScript files }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script src="{{asset "js/bootstrap.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/application.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/masonry.pkgd.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/moment.min.js"}}"></script>
