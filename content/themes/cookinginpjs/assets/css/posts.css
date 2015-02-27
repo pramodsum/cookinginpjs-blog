@@ -135,6 +135,6 @@ small {
   text-transform: uppercase;
 }
 
-.post-meta {
+div.post-meta.date {
   color: #92b3d4;
 }
