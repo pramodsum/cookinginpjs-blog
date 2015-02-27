@@ -11,7 +11,7 @@
 
 .recipe-header {
   background-color: #ffec82;
-  padding: 30px 30px 0;
+  padding: 30px 30px 20px;
   overflow: hidden;
 }
 
@@ -122,4 +122,8 @@
 
 li.ingredient {
   padding-bottom: 5px;
+}
+
+.recipe strong {
+  text-transform: uppercase;
 }

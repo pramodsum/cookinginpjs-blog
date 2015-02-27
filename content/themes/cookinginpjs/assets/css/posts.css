@@ -130,3 +130,7 @@ ul.social-fixed {
 small {
   color: #92b3d4;
 }
+
+.post-index h1 {
+  text-transform: uppercase;
+}
