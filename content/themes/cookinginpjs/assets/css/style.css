@@ -707,7 +707,10 @@ div.post-meta.date a {
 
 }
 
-.nav>li>a {  text-transform: uppercase!important }
+.nav>li>a {  
+  text-transform: uppercase!important;
+  font-weight: normal;
+}
 
 @font-face {
   font-family: 'dilemhandwrittenmedium';
