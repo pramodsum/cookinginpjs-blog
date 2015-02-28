@@ -35,7 +35,6 @@ body {
     line-height: 1;
     color: #000;
     background: #fff;
-    font-size: 16px
 }
 
 img {
@@ -84,16 +83,16 @@ media_tag_1 {media_subcode:1}
     border: 2px solid #ffec82;
     border-radius: 100%;
     text-align: center;
-    font-size: 20px;
-    line-height: 45px
+    font-size: 1.25rem;
+    line-height: 1.5rem
 }
 
 .btn-social:first-child {
     left: 6px;
     top: 6px;
     bottom: 0;
-    line-height: 34px;
-    font-size: 34px;
+    line-height: 2rem;
+    font-size: 2rem;
     text-align: center;
     border-right: 0!important
 }
@@ -263,12 +262,12 @@ media_tag_1 {media_subcode:1}
 }
 
 .recipe {
-  color: #6c6e70;
+  color: black;
   font-style: normal;
   margin: 25px 0;
   overflow: hidden;
   border: 0;
-  background-color: #fff;
+  background-color: white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -279,6 +278,17 @@ media_tag_1 {media_subcode:1}
   overflow: hidden;
 }
 
+.recipe .recipe-header a {  
+  text-decoration: none;
+  color: #84E8EF;
+  text-shadow: 0.5px 0.5px #5D7388;
+}
+
+.recipe .recipe-header a:hover,
+.recipe .recipe-header a:focus {
+  text-decoration: underline;
+}
+
 .recipe-body {
   padding: 28px 30px;
   border: 1px solid #e1e2e2;
@@ -287,9 +297,11 @@ media_tag_1 {media_subcode:1}
   border-top: none;
 }
 
-.recipe h2 {
-  color: #fff;
-  text-shadow: 1px 1px #92b3d4;
+.recipe .recipe-header h2, 
+.recipe .recipe-header h2 a {
+  color: white;
+  text-shadow: 1px 1px #5D7388;
+  font-weight: bolder;
   margin-top: 0;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -301,11 +313,15 @@ media_tag_1 {media_subcode:1}
   clear: left;
 }
 
-.recipe h3#directions {  color: #76cdd3 }
+.recipe h3#directions {  
+  color: #76cdd3;
+  font-weight: bold; 
+}
 
 .recipe h4 {
   color: #76cdd3;
   font-size: 1.6rem;
+  font-weight: bold; 
   text-transform: uppercase;
   letter-spacing: .07em;
   margin: 0 0 6px;
@@ -326,7 +342,7 @@ media_tag_1 {media_subcode:1}
 
 .recipe .time {
   color: #92b3d4;
-  font-size: 11px;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: .07em;
@@ -354,10 +370,11 @@ media_tag_1 {media_subcode:1}
 
 .recipe .left {  margin-bottom: 30px }
 
+.recipe .source p  { color: #989a9b; }
+
 .recipe .source p,
 .recipe .summary a {
-  color: #989a9b;
-  font-size: 12.5px;
+  font-size: 1.25rem;
   font-style: italic;
   margin-top: 1px;
   margin-bottom: 1px;
@@ -367,14 +384,6 @@ media_tag_1 {media_subcode:1}
 .recipe .ingredient,
 .recipe .instructions,
 .recipe .summary {  font-size: 1.5rem }
-
-.recipe .recipe-header a {  text-decoration: none }
-
-.recipe .recipe-header a:hover,
-.recipe .recipe-header a:focus {
-  color: #76cdd3;
-  text-shadow: 1px 1px #ff93a5;
-}
 
 li.ingredient {  padding-bottom: 5px }
 
@@ -475,8 +484,6 @@ ul.social-fixed {
   text-shadow: 1px 1px #000;
 }
 
-.post-index .date {  color: #92b3d4 }
-
 @media (min-width:768px) { 
     .post-index {  max-width: 654px }
 
@@ -521,7 +528,11 @@ small {  color: #92b3d4 }
 
 .post-index h1 {  text-transform: uppercase }
 
-div.post-meta.date {  color: #92b3d4!important }
+div.post-meta.date {  
+  /*color: #8AAAC9 !important;*/
+  color: grey !important;
+  font-weight: bold;
+}
 
 /* HEADER */
 
@@ -593,7 +604,7 @@ div.post-meta.date {  color: #92b3d4!important }
   position: absolute;
   display: block;
   border-style: solid;
-  border-color: #CDBF67 transparent transparent transparent;
+  border-color: #f4e17c transparent transparent transparent;
   bottom: -1em;
 }
 
@@ -733,7 +744,7 @@ div.post-meta.date {  color: #92b3d4!important }
   font-style: normal;
 }
 
-body {  font-size: .8rem }
+body, .btn {  font-size: .8rem }
 
 h1 {  font-size: 2rem }
 
@@ -747,8 +758,22 @@ h5 {  font-size: .8rem }
 
 h6 {  font-size: .5rem }
 
+.sidebar input.form-control,
+.sidebar button {
+  font-size: 0.8rem;
+  padding: 1px 2px;
+  padding-top: 2px;
+  height: auto;
+}
+
+.social-fixed a.btn {
+  /*width: 20px;*/
+  font-size: 0/8rem;
+  /*padding: 0.5px;*/
+}
+
 @media (min-width:270px) { 
-    body {  font-size: 1rem }
+    body, .btn {  font-size: 1rem }
 
     h1 {  font-size: 2rem }
 
@@ -779,7 +804,7 @@ h6 {  font-size: .5rem }
 }
 
 @media (min-width:375px) { 
-    body {  font-size: 1rem }
+    body, .btn {  font-size: 1rem }
 
     h1 {  font-size: 2rem }
 
@@ -792,19 +817,10 @@ h6 {  font-size: .5rem }
     h5 {  font-size: .8rem }
 
     h6 {  font-size: .5rem }
-
-    .sidebar input.form-control,
-    .sidebar button {
-      font-size: 1.2rem;
-      padding: 3px 6px;
-      padding-top: 6px;
-      height: auto;
-    }
-
 }
 
 @media (min-width:638px) { 
-    body {  font-size: 1.5rem }
+    body, .btn {  font-size: 1.5rem }
 
     h1 {  font-size: 3rem }
 
@@ -836,7 +852,7 @@ h6 {  font-size: .5rem }
 }
 
 @media (min-width:1200px) { 
-    body {  font-size: 1.8rem }
+    body, .btn {  font-size: 1.8rem }
 
     h1 {  font-size: 4rem }
 
@@ -852,20 +868,6 @@ h6 {  font-size: .5rem }
 
 }
 
-@import "bootstrap.min.css";
-@import "font-awesome.min.css";
-@import "ionicons.css";
-@import "bootstrap-social.css";
-@import "common.css";
-@import "comments.css";
-@import "github.css";
-@import "footer.css";
-@import "posts.css";
-@import "header.css";
-@import "animate.css";
-@import "recipe.css";
-@import "sidebar.css";
-@import "font.css";
 .content {
   padding: 30px 0;
   min-height: 100%;
