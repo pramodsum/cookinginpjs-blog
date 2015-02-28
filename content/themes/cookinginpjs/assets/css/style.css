@@ -534,6 +534,11 @@ div.post-meta.date {
   font-weight: bold;
 }
 
+div.post-meta.date a {  
+  color: grey !important;
+  /*font-weight: bolder;*/
+}
+
 /* HEADER */
 
 #masthead-frame-and-content-wrap {
@@ -880,6 +885,7 @@ h6 {  font-size: .5rem }
 
 a {
   color: #92b3d4;
+  font-weight: bolder;
   text-decoration: none;
 }
 
