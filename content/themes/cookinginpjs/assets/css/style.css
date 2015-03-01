@@ -76,17 +76,6 @@ ul.banner-social-buttons {
 media_tag_0 {media_subcode:0}
 media_tag_1 {media_subcode:1}
 
-.btn-social {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #ffec82;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 1.25rem;
-    line-height: 1.5rem
-}
-
 .btn-social:first-child {
     left: 6px;
     top: 6px;
@@ -98,6 +87,14 @@ media_tag_1 {media_subcode:1}
 }
 
 .btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffec82;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.5rem
     margin-top: 15px;
     padding: 7px 16px;
     border: 2px solid #ffec82;
@@ -133,7 +130,6 @@ media_tag_1 {media_subcode:1}
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear
 }
-
 @-webkit-keyframes pulse { 
      {
       -webkit-transform: scale(1);
