@@ -130,7 +130,7 @@ media_tag_1 {media_subcode:1}
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear
 }
-@-webkit-keyframes pulse { 
+@-webkit-keyframes pulse {
      {
       -webkit-transform: scale(1);
       transform: scale(1);
@@ -148,7 +148,7 @@ media_tag_1 {media_subcode:1}
 
 }
 
-@-moz-keyframes pulse { 
+@-moz-keyframes pulse {
      {
       -moz-transform: scale(1);
       transform: scale(1);
@@ -274,7 +274,7 @@ media_tag_1 {media_subcode:1}
   overflow: hidden;
 }
 
-.recipe .recipe-header a {  
+.recipe .recipe-header a {
   text-decoration: none;
   color: #84E8EF;
   text-shadow: 0.5px 0.5px #5D7388;
@@ -293,7 +293,7 @@ media_tag_1 {media_subcode:1}
   border-top: none;
 }
 
-.recipe .recipe-header h2, 
+.recipe .recipe-header h2,
 .recipe .recipe-header h2 a {
   color: white;
   text-shadow: 1px 1px #5D7388;
@@ -309,15 +309,15 @@ media_tag_1 {media_subcode:1}
   clear: left;
 }
 
-.recipe h3#directions {  
+.recipe h3#directions {
   color: #76cdd3;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .recipe h4 {
   color: #76cdd3;
   font-size: 1.6rem;
-  font-weight: bold; 
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .07em;
   margin: 0 0 6px;
@@ -480,22 +480,22 @@ ul.social-fixed {
   text-shadow: 1px 1px #000;
 }
 
-@media (min-width:768px) { 
+@media (min-width:768px) {
     .post-index {  max-width: 654px }
 
 }
 
-@media (min-width:860px) { 
+@media (min-width:860px) {
     .post-index {  max-width: 654px }
 
 }
 
-@media (min-width:992px) { 
+@media (min-width:992px) {
     .post-index {  max-width: 860px }
 
 }
 
-@media (min-width:1200px) { 
+@media (min-width:1200px) {
     .post-index {  max-width: 965px }
 
 }
@@ -524,13 +524,13 @@ small {  color: #92b3d4 }
 
 .post-index h1 {  text-transform: uppercase }
 
-div.post-meta.date {  
+div.post-meta.date {
   /*color: #8AAAC9 !important;*/
   color: grey !important;
   font-weight: bold;
 }
 
-div.post-meta.date a {  
+div.post-meta.date a {
   color: grey !important;
   /*font-weight: bolder;*/
 }
@@ -643,7 +643,7 @@ div.post-meta.date a {
 
 .ribbon-content {  height: auto!important }
 
-@media (min-width:250px) { 
+@media (min-width:250px) {
     .ribbon {
       max-width: 694px;
       height: 147px;
@@ -653,7 +653,7 @@ div.post-meta.date a {
 
 }
 
-@media (min-width:270px) { 
+@media (min-width:270px) {
     .ribbon {
       max-width: 694px;
       height: 115px;
@@ -663,7 +663,7 @@ div.post-meta.date a {
 
 }
 
-@media (min-width:375px) { 
+@media (min-width:375px) {
     .ribbon {
       max-width: 694px;
       height: 89px;
@@ -673,7 +673,7 @@ div.post-meta.date a {
 
 }
 
-@media (min-width:638px) { 
+@media (min-width:638px) {
     .ribbon {
       max-width: 896px;
       height: 55px;
@@ -683,7 +683,7 @@ div.post-meta.date a {
 
 }
 
-@media (min-width:768px) { 
+@media (min-width:768px) {
     .ribbon {
       max-width: 1000px;
       height: 55px;
@@ -692,7 +692,7 @@ div.post-meta.date a {
     .ribbon-content {  height: auto!important }
 }
 
-@media (max-width:767px)0 { 
+@media (max-width:767px)0 {
     ul.banner-social-buttons li {
       display: block;
       margin-bottom: 20px;
@@ -703,7 +703,7 @@ div.post-meta.date a {
 
 }
 
-.nav>li>a {  
+.nav>li>a {
   text-transform: uppercase!important;
   font-weight: normal;
 }
@@ -750,6 +750,8 @@ div.post-meta.date a {
 
 body, .btn {  font-size: .8rem }
 
+div.post-content { line-height: 1.25rem;}
+
 h1 {  font-size: 2rem }
 
 h2 {  font-size: 1.5rem }
@@ -776,8 +778,10 @@ h6 {  font-size: .5rem }
   /*padding: 0.5px;*/
 }
 
-@media (min-width:270px) { 
+@media (min-width:270px) {
     body, .btn {  font-size: 1rem }
+
+    div.post-content { line-height: 1.5rem;}
 
     h1 {  font-size: 2rem }
 
@@ -807,8 +811,10 @@ h6 {  font-size: .5rem }
 
 }
 
-@media (min-width:375px) { 
+@media (min-width:375px) {
     body, .btn {  font-size: 1rem }
+
+    div.post-content { line-height: 1.75rem;}
 
     h1 {  font-size: 2rem }
 
@@ -823,8 +829,10 @@ h6 {  font-size: .5rem }
     h6 {  font-size: .5rem }
 }
 
-@media (min-width:638px) { 
+@media (min-width:638px) {
     body, .btn {  font-size: 1.5rem }
+
+    div.post-content { line-height: 2rem;}
 
     h1 {  font-size: 3rem }
 
@@ -855,8 +863,10 @@ h6 {  font-size: .5rem }
 
 }
 
-@media (min-width:1200px) { 
+@media (min-width:1200px) {
     body, .btn {  font-size: 1.8rem }
+
+    div.post-content { line-height: 2.25rem;}
 
     h1 {  font-size: 4rem }
 
