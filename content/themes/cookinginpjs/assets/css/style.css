@@ -882,6 +882,10 @@ h6 {  font-size: .5rem }
 
 }
 
+@media (max-width: 637px) {
+    div.subscribe-bottom { display: none; }
+}
+
 .content {
   padding: 30px 0;
   min-height: 100%;
