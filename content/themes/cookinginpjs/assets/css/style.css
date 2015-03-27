@@ -826,8 +826,6 @@ h6 {  font-size: .5rem }
   /*padding: 0.5px;*/
 }
 
-span.text-content, ul.img-list li {  height: 85px; width: 85px; }
-
 @media (min-width:270px) {
     body, .btn {  font-size: 1rem }
 
@@ -858,6 +856,8 @@ span.text-content, ul.img-list li {  height: 85px; width: 85px; }
       font-size: 1rem;
       padding: 2px;
     }
+
+    span.text-content, ul.img-list li {  height: 50px; width: 50px; }
 }
 
 @media (min-width:375px) {
@@ -876,6 +876,12 @@ span.text-content, ul.img-list li {  height: 85px; width: 85px; }
     h5 {  font-size: .8rem }
 
     h6 {  font-size: .5rem }
+
+    span.text-content, ul.img-list li {  height: 65px; width: 65px; }
+}
+
+@media (min-width:415px) {
+    span.text-content, ul.img-list li {  height: 85px; width: 85px; }
 }
 
 @media (min-width:638px) {
