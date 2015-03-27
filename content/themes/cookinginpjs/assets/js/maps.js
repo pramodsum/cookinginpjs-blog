@@ -1,6 +1,5 @@
 var locations = [
-  ['Frita Batidos', "http://localhost:2368/whoop-whoop-whoop/", 42.280377, -83.74942],
-  ['Seoul Street', "", 42.298377, -83.7197],
+  ['Frita Batidos', "http://cookinginpjs.com/frita-batidos/", 42.280377, -83.74942],
 ];
 
 var map = new google.maps.Map(document.getElementById('map'), {
@@ -15,7 +14,7 @@ var marker, i;
 var geocoder = geocoder = new google.maps.Geocoder();;
 var bounds = new google.maps.LatLngBounds();
 
-for (i = 0; i < locations.length; i++) {  
+for (i = 0; i < locations.length; i++) {
   marker = new google.maps.Marker({
     position: new google.maps.LatLng(locations[i][2], locations[i][3]),
     map: map,
