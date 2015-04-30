@@ -23,8 +23,8 @@
   ],
   "main": "./core/index",
   "scripts": {
-    "start": "nodemon index",
-    "test": "grunt validate --verbose"
+    "start": "node index",
+    "test": "nodemon index"
   },
   "engines": {
     "node": "~0.10.0 || ~0.12.0",
