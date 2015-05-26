@@ -590,7 +590,7 @@ User = ghostBookshelf.Model.extend({
             // Users with the role 'Editor' and 'Author' have complex permissions when the action === 'edit'
             // We now have all the info we need to construct the permissions
             if (_.any(loadedPermissions.user.roles, {name: 'Author'})) {
-                 // If this is the same user that requests the operation allow it.
+                // If this is the same user that requests the operation allow it.
                 hasUserPermission = hasUserPermission || context.user === userModel.get('id');
             }
 
@@ -611,7 +611,7 @@ User = ghostBookshelf.Model.extend({
 
             // Users with the role 'Editor' have complex permissions when the action === 'destroy'
             if (_.any(loadedPermissions.user.roles, {name: 'Editor'})) {
-                 // If this is the same user that requests the operation allow it.
+                // If this is the same user that requests the operation allow it.
                 hasUserPermission = context.user === userModel.get('id');
 
                 // Alternatively, if the user we are trying to edit is an Author, allow it
@@ -694,9 +694,8 @@ User = ghostBookshelf.Model.extend({
                         });
                 }, errors.logAndThrowError);
             }
-            return Promise.reject(new errors.NoPermissionError('Your account is locked due to too many ' +
-                'login attempts. Please reset your password to log in again by clicking ' +
-                'the "Forgotten password?" link!'));
+            return Promise.reject(new errors.NoPermissionError('Your account is locked. Please reset your password ' +
+                'to log in again by clicking the "Forgotten password?" link!'));
         }, function (error) {
             if (error.message === 'NotFound' || error.message === 'EmptyResponse') {
                 return Promise.reject(new errors.NotFoundError('There is no user with that email address.'));
