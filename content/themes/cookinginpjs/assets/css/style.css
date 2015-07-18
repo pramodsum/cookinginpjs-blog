@@ -843,12 +843,18 @@ h6 {  font-size: .5rem }
 
     h6 {  font-size: .5rem }
 
+    .sidebar h2 { font-size: 1rem; }
+
     .sidebar input.form-control,
-    .sidebar button {
-      font-size: 1rem;
-      padding: 2px 4px;
-      padding-top: 4px;
+    .sidebar button, 
+    .sidebar #mc-embedded-subscribe,
+    .sidebar #search-submit {
+      font-size: 0.6rem;
+      padding: 0px 4px;
+      padding-top: 2px;
+      border-radius: 2px;
       height: auto;
+      width: 100%;
     }
 
     .social-fixed a.btn {
@@ -877,6 +883,20 @@ h6 {  font-size: .5rem }
 
     h6 {  font-size: .5rem }
 
+    .sidebar h2 { font-size: 1.2rem; }
+
+    .sidebar input.form-control,
+    .sidebar button, 
+    .sidebar #mc-embedded-subscribe,
+    .sidebar #search-submit {
+      font-size: 0.9rem;
+      padding: 0px 4px;
+      padding-top: 4px;
+      border-radius: 3px;
+      height: auto;
+      width: 100%;
+    }
+
     span.text-content, ul.img-list li {  height: 65px; width: 65px; }
 }
 
@@ -901,8 +921,12 @@ h6 {  font-size: .5rem }
 
     h6 {  font-size: 1rem }
 
+    .sidebar h2 { font-size: 2.5rem; }
+
     .sidebar input.form-control,
-    .sidebar button {
+    .sidebar button, 
+    .sidebar #mc-embedded-subscribe,
+    .sidebar #search-submit {
       font-size: 1.5rem;
       padding: 4px 8px;
       padding-top: 8px;
@@ -942,6 +966,8 @@ h6 {  font-size: .5rem }
     h5 {  font-size: 1.5rem }
 
     h6 {  font-size: 1rem }
+
+    .sidebar h2 { font-size: 3rem; }
 
     span.text-content, ul.img-list li {  height: 211px; width: 211px; }
 
