@@ -166,6 +166,10 @@ media_tag_1 {media_subcode:1}
 
 }
 
+.fb-comments, .fb-comments * {
+    width:100% !important;
+}
+
 .comments .btn {
   background: #92b3d4;
   color: white!important;
