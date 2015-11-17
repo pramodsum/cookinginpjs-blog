@@ -34,3 +34,4 @@ test/
 
 node_modules/
 *.db
+npm-debug.log
