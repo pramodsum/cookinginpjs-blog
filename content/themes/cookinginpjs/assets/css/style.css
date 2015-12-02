@@ -81,12 +81,48 @@ header h1 {
   }
 
 /* 
+SIDEBAR 
+*/
+.sidebar { text-align: center; font-size: 1.5rem; width: 20%; }
+.sidebar p { margin: 1.5rem;}
+
+.sidebar img.circle { border-radius: 50%; }
+
+.sidebar form { margin: 1rem; }
+.sidebar form input { margin: 0.5rem; padding: 0.25rem 1rem; padding-bottom: 0rem; line-height: 1.5rem; width: 100%; text-align: center; }
+.sidebar input { font-size: 11px; font-weight: bolder; }
+
+.sidebar h2 { font-size: 2.6rem; line-height: 1.25; letter-spacing: -.1rem; margin: 1rem; }
+.sidebar h3 { font-size: 2.0rem; line-height: 1;  letter-spacing: -.1rem; margin: 0.5rem;}
+
+/* Smaller than phablet */
+@media (max-width: 550px) {
+  .sidebar { font-size: 1.3rem; }
+  .sidebar h2 { font-size: 2.5rem; }
+  .sidebar h3 { font-size: 1.5rem; }
+}
+
+.sidebar ul { margin: 0.25rem; }
+.sidebar ul.img-list li { list-style: none; }
+.sidebar ul.img-list li img { border-radius: 10px; }
+.sidebar ul.blog-list li { margin: 0rem; text-align: left; }
+
+/* 
 BODY 
 */
 
 body {
   padding: 0;
   margin: 0;
+}
+
+.main-body { width: 75%; }
+
+/* 
+FOOTER
+*/
+.footer {
+  padding-top: 2rem;
 }
 
 /* 

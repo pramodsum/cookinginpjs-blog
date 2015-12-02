@@ -37,7 +37,7 @@
 <ul id="latest-posts"></ul>
 <br>
 <form>
-  <input class="form-control" id="search-field" placeholder="WHERE'S MY NOMS?!"/>
+  <input id="search-field" type="text" placeholder="WHERE'S MY NOMS?!"/><br>
   <input id="search-submit" type="submit" class="btn btn-default" value="HELP ME!">
 </form>
 
@@ -52,7 +52,7 @@ $("#search-field").ghostHunter({
 
 {{!-- ABOUT US --}}
 <h2>Hello & Welcome</h2>
-<p><img class="img-responsive img-circle" data-pin-no-hover="true" src="{{asset "images/about.jpg"}}"></p>
+<p><img class="circle" data-pin-no-hover="true" src="{{asset "images/about.jpg"}}"></p>
 <p>
   This is the blog of <a href="http://sumninjacode.io">Sumu</a> and <a href="http://dearuniverse.me">Anu</a>, wayfaring adventurers and aspiring home cooks.
 </p>
@@ -126,7 +126,7 @@ $("#search-field").ghostHunter({
 {{!-- MORE BLOGS --}}
 <h2>Still not Satisfied?</h2>
 <p>Check out some other pretty awesome food blogs</p>
-<ul>
+<ul class="blog-list">
   <li><a href="http://uppukhara.com">UppuKhara</a></li>
   <li><a href="http://www.loveandlemons.com">Love & Lemons</a></li>
   <li><a href="http://www.iamafoodblog.com">I am a food blog</a></li>
@@ -150,5 +150,3 @@ $("#search-field").ghostHunter({
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
-
