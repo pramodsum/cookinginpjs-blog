@@ -119,6 +119,21 @@ body {
 .main-body { width: 75%; }
 
 /* 
+ERROR
+*/
+.error { text-align: center; }
+.error.main-body { width: 100%; }
+.error h1 { font-size: 5rem; margin: 2rem;}
+.error h1 small { font-size: 3rem; color: rgba(0,0,0,0.5); }
+.error img { width: 100%; max-width: 1000px; }
+
+/* Smaller than phablet */
+@media (max-width: 720px) {
+  .error h1 { font-size: 4rem; }
+  .error h1 small { font-size: 2rem; }
+}
+
+/* 
 FOOTER
 */
 .footer {
