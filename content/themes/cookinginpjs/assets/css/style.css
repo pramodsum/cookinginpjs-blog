@@ -1,5 +1,6 @@
 @import "external.css";
 @import "skeleton.css";
+@import "navbar.css";
 
 /* 
 FONTS
@@ -22,7 +23,7 @@ header h1 {
 }
 
 a { text-decoration: none; color: grey;}
-a:hover, a:focus { color: #1EAEDB;}
+a:hover, a:focus { color: #92b3d4;}
 
 /* 
 HEADER 
@@ -39,6 +40,12 @@ header h1 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;*/
+}
+
+.navbar-nav img {
+  width: 30px;
+  height: 30px;
+  margin: -15px 15px -15px;
 }
 
 #top-bar {
@@ -149,14 +156,28 @@ FOOTER
 BUTTONS & INPUTS
 */
 
-.button-primary {
+.button.button-primary {
   font-family: fox__catregular;
-  background-color: #1EAEDB;
+  background-color: #92b3d4;
+  border-color: #92b3d4;
+}
+
+.button.button-primary:hover, .button.button-primary:focus {
+  background-color: transparent;
+  border-color: #bbb;
+  color: #555;
+}
+
+input[type="submit"], input[type="submit"] {
+  background-color: #92b3d4;
+  border-color: #92b3d4;
+  color: white;
 }
 
 input[type="submit"]:hover, input[type="submit"]:focus {
-  background-color: #1EAEDB;
-  color: white;
+  background-color: transparent;
+  border-color: #bbb;
+  color: #555;
 }
 
 input {
@@ -201,6 +222,8 @@ IMAGES
  */
 img { border-radius: 10px; }
 .circle { border-radius: 50%; }
+.author-thumb { border-radius: 50%; width: 1.5em; }
+#nav-wrapper img { border-radius: 0 !important; float: left; }
 
 /*
 FONT DEFINITIONS 

@@ -1,13 +1,34 @@
-<div id="top-bar">
-  <div id="nav-wrapper">
-    <ul class="menu">
-      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{@blog.url}}"><img style="max-height: 3rem; padding-top: 0.25rem; padding-bottom: 0rem" src="{{asset "images/pants.png"}}"></a></li>
-      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{@blog.url}}/tag/herbivores">Herbivores</a></li>
-      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{@blog.url}}/tag/carnivores">Carnivores</a></li>
-      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{@blog.url}}/tag/desserts">Sugar Rush</a></li>
-      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{@blog.url}}/tag/giggle-juice">Giggle Juice</a></li>
-      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{@blog.url}}/tag/eating-out">Eating Out</a></li>
-      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{@blog.url}}/about/">ABOUT</a></li>
-    </ul>     
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a href="{{@blog.url}}" class="navbar-brand"><img src="{{asset "images/pants.png"}}"></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="{{@blog.url}}/tag/herbivores">Herbivores</a></li>
+        <li><a href="{{@blog.url}}/tag/carnivores">Carnivores</a></li>
+        <li><a href="{{@blog.url}}/tag/desserts">Sugar Rush</a></li>
+        <li><a href="{{@blog.url}}/tag/giggle-juice">Giggle Juice</a></li>
+        <li><a href="{{@blog.url}}/tag/eating-out">Eating Out</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{@blog.url}}/about/">ABOUT</a></li>
+      </ul>
+    </div>
   </div>
 </div>
+
+{{!-- <div id="top-bar">
+  <div id="nav-wrapper">
+    <ul class="menu">
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="{{@blog.url}}"><img style="max-height: 3rem; padding-top: 0.25rem; padding-bottom: 0rem" src="{{asset "images/pants.png"}}"></a></li>
+      <li><a href="{{@blog.url}}/tag/herbivores">Herbivores</a></li>
+      <li><a href="{{@blog.url}}/tag/carnivores">Carnivores</a></li>
+      <li><a href="{{@blog.url}}/tag/desserts">Sugar Rush</a></li>
+      <li><a href="{{@blog.url}}/tag/giggle-juice">Giggle Juice</a></li>
+      <li><a href="{{@blog.url}}/tag/eating-out">Eating Out</a></li>
+      <li><a href="{{@blog.url}}/about/">ABOUT</a></li>
+    </ul>     
+  </div>
+</div> --}}
