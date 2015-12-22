@@ -39,6 +39,12 @@ header h1 {
 .sidebar h3 { font-size: 2rem; }
 .sidebar input { font-size: 1rem; }
 
+.sidebar input.form-control,
+.sidebar button, 
+.sidebar #mc-embedded-subscribe,
+.sidebar #search-submit { font-size: 1.5rem; }
+.social-fixed a.btn { font-size: 1.5rem; }
+
 /* Smaller than phablet */
 @media (max-width: 750px) {
   .error h1 { font-size: 4rem; }
@@ -50,6 +56,12 @@ header h1 {
   .sidebar h2 { font-size: 2rem; }
   .sidebar h3 { font-size: 1.5rem; }
   .sidebar input { font-size: 1rem; }
+
+  .sidebar input.form-control,
+  .sidebar button, 
+  .sidebar #mc-embedded-subscribe,
+  .sidebar #search-submit { font-size: 1.5rem; }
+  .social-fixed a.btn { font-size: 1.5rem; }
 }
 
 @media (max-width: 550px) {
@@ -70,6 +82,12 @@ header h1 {
   .sidebar h2 { font-size: 2rem; }
   .sidebar h3 { font-size: 1.5rem; }
   .sidebar input { font-size: 1rem; }
+
+  .sidebar input.form-control,
+  .sidebar button, 
+  .sidebar #mc-embedded-subscribe,
+  .sidebar #search-submit { font-size: 1.5rem; }
+  .social-fixed a.btn { font-size: 1.5rem; }
 }
 
 a { text-decoration: none; color: grey;}

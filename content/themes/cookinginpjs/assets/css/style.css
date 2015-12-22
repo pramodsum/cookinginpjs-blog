@@ -215,14 +215,12 @@ li.ingredient {  padding-bottom: 5px; margin-bottom: 0;}
   .sidebar button, 
   .sidebar #mc-embedded-subscribe,
   .sidebar #search-submit {
-    font-size: 1.5rem;
     padding: 4px 8px;
     padding-top: 8px;
     height: auto;
   }
   .social-fixed a.btn {
     width: 39px;
-    font-size: 1.5rem;
     padding: 4px 2px;
     padding-top: 8px;
   }

@@ -17,6 +17,13 @@
     <link rel="shortcut icon" href="{{asset "images/pants.png"}}">
 
     {{! Styles'n'Scripts }}
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
     <script src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
@@ -44,11 +51,12 @@
         <div class="column main-body">
           <section id="results"></section>
           {{{body}}}
+          <br>
+          {{> "footer"}}
         </div>
         <div class="column sidebar">
           {{> "sidebar"}}
         </div>
-        {{!-- {{> "footer"}} --}}
       </div>
     </div>
 
