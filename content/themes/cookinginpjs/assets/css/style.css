@@ -60,7 +60,7 @@ header {
 /* 
 SIDEBAR 
 */
-.sidebar { text-align: center; width: 20%; }
+.sidebar { text-align: center; width: 20%; padding-left: 10px; }
 .sidebar p { margin: 1.5rem;}
 
 .sidebar form { margin: 1rem; }
