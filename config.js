@@ -11,7 +11,7 @@ config = {
     // Configure your URL and mail settings here
     // ### Production
     production: {
-        url: 'http://serene-scrubland-8972.herokuapp.com/',
+        url: 'http://serene-scrubland-8972.herokuapp.com',
         mail: {
           transport: 'SMTP',
           host: 'smtp.mandrillapp.com',
