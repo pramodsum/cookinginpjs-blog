@@ -1,29 +1,7 @@
 @import "external.css";
 @import "skeleton.css";
 @import "navbar.css";
-
-/* 
-FONTS
-*/
-
-h1, h2, h3, h4, h5, h6 { 
-  font-family: fox__catregular; 
-  text-transform: uppercase; 
-}
-.post-meta, input, .sidebar a, .post-footer, .btn { 
-  font-family: fox__catregular; 
-  text-transform: uppercase; 
-}
-
-header h1 {
-  font-family: grutchshadedregular; 
-  /*text-transform: capitalize;*/
-  text-align: center;
-  font-weight: lighter;
-}
-
-a { text-decoration: none; color: grey;}
-a:hover, a:focus { color: #92b3d4;}
+@import "fonts.css";
 
 /* 
 HEADER 
@@ -32,14 +10,6 @@ HEADER
 header {
   padding-top: 100px;
   padding-bottom: 20px;
-}
-
-header h1 {
-  font-size: 10rem;
-  /*background-image: url("../images/pants.png") ;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;*/
 }
 
 .navbar-nav img {
@@ -159,7 +129,6 @@ SIDEBAR
 
 .recipe h4 {
   color: #76cdd3;
-  font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .07em;
@@ -224,15 +193,24 @@ SIDEBAR
 .recipe .instructions,
 .recipe .summary {  font-size: 1.5rem }
 
-li.ingredient {  padding-bottom: 5px }
+.recipe p { margin-bottom: 1rem;}
+
+li.ingredient {  padding-bottom: 5px; margin-bottom: 0;}
 
 .recipe strong {  text-transform: uppercase }
 
 /* Smaller than phablet */
+
+.sidebar ul { margin: 0.25rem; }
+.sidebar ul.img-list li { list-style: none; }
+.sidebar ul.img-list li img { border-radius: 10px; }
+.sidebar ul.blog-list li { margin: 0rem; text-align: left; }
+
+@media (max-width: 637px) {
+    div.subscribe-bottom { display: none; }
+}
+
 @media (max-width: 550px) {
-  .sidebar { font-size: 1.3rem; }
-  .sidebar h2 { font-size: 2.5rem; }
-  .sidebar h3 { font-size: 1.5rem; }
   .sidebar input.form-control,
   .sidebar button, 
   .sidebar #mc-embedded-subscribe,
@@ -248,16 +226,6 @@ li.ingredient {  padding-bottom: 5px }
     padding: 4px 2px;
     padding-top: 8px;
   }
-}
-
-.sidebar ul { margin: 0.25rem; }
-.sidebar ul.img-list li { list-style: none; }
-.sidebar ul.img-list li img { border-radius: 10px; }
-.sidebar ul.blog-list li { margin: 0rem; text-align: left; }
-
-
-@media (max-width: 637px) {
-    div.subscribe-bottom { display: none; }
 }
 
 /* 
@@ -279,12 +247,6 @@ ERROR
 .error h1 { font-size: 5rem; margin: 2rem;}
 .error h1 small { font-size: 3rem; color: rgba(0,0,0,0.5); }
 .error img { width: 100%; max-width: 1000px; }
-
-/* Smaller than phablet */
-@media (max-width: 720px) {
-  .error h1 { font-size: 4rem; }
-  .error h1 small { font-size: 2rem; }
-}
 
 /* 
 ABOUT

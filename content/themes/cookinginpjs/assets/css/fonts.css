@@ -1,0 +1,61 @@
+
+
+/* 
+FONTS
+*/
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: fox__catregular; 
+  text-transform: uppercase; 
+}
+.post-meta, input, .sidebar a, .post-footer, .btn { 
+  font-family: fox__catregular; 
+  text-transform: uppercase; 
+}
+
+header h1 {
+  font-family: grutchshadedregular; 
+  /*text-transform: capitalize;*/
+  text-align: center;
+  font-weight: lighter;
+  font-size: 10rem;
+}
+
+#posts h1, .post-index h1 
+#posts h2, .post-index h2
+#posts h3, .post-index h3
+#posts h4, .post-index h4
+#posts h5 .post-index h5 { line-height: 1; }
+
+.post-index h1, #posts h1 { font-size: 4.0rem; }
+.post-index h2, #posts h2 { font-size: 3rem; }
+.post-index h3, #posts h3 { font-size: 2.5rem; }
+.post-index h4, #posts h4 { font-size: 2rem; }
+.post-index h5, #posts h5 { font-size: 1.5rem; }
+.post-index, #posts, .recipe { font-size: 1.75rem; }
+
+/* Smaller than phablet */
+@media (max-width: 750px) {
+  .error h1 { font-size: 4rem; }
+  .error h1 small { font-size: 2rem; }
+
+  .post-index, #posts, .recipe { font-size: 1.75rem; }
+}
+
+@media (max-width: 550px) {
+  .sidebar { font-size: 1.3rem; }
+  .sidebar h2 { font-size: 2.5rem; }
+  .sidebar h3 { font-size: 1.5rem; }
+
+  .post-index h1, #posts h1 { font-size: 3rem; }
+  .post-index h2, #posts h2 { font-size: 2rem; }
+  .post-index h3, #posts h3 { font-size: 1.5rem; }
+  .post-index h4, #posts h4 { font-size: 1rem; }
+  .post-index h5, #posts h5 { font-size: 0.5rem; }
+  .post-index, #posts, .recipe { font-size: 1.5rem; }
+
+  header h1 { font-size: 7rem; }
+}
+
+a { text-decoration: none; color: grey;}
+a:hover, a:focus { color: #92b3d4;}
