@@ -100,17 +100,165 @@ SIDEBAR
 .sidebar h2 { font-size: 2.6rem; line-height: 1.25; letter-spacing: -.1rem; margin: 1rem; }
 .sidebar h3 { font-size: 2.0rem; line-height: 1;  letter-spacing: -.1rem; margin: 0.5rem;}
 
+.recipe {
+  color: black;
+  font-style: normal;
+  margin: 25px 0;
+  overflow: hidden;
+  border: 0;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.recipe-header {
+  background-color: #FFEC96;
+  padding: 30px 30px 20px;
+  overflow: hidden;
+}
+
+.recipe .recipe-header a {
+  text-decoration: none;
+  color: #84E8EF;
+  text-shadow: 0.5px 0.5px #5D7388;
+}
+
+.recipe .recipe-header a:hover,
+.recipe .recipe-header a:focus {
+  text-decoration: underline;
+}
+
+.recipe-body {
+  padding: 28px 30px;
+  border: 1px solid #e1e2e2;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none;
+}
+
+.recipe .recipe-header h2,
+.recipe .recipe-header h2 a {
+  color: white;
+  text-shadow: 1px 1px #5D7388;
+  font-weight: bolder;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.recipe h3 {
+  color: #ff93a5;
+  margin: 0 0 13px;
+  clear: left;
+}
+
+.recipe h3#directions {
+  color: #76cdd3;
+  font-weight: bold;
+}
+
+.recipe h4 {
+  color: #76cdd3;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin: 0 0 6px;
+}
+
+.recipe ol:last-of-type {  margin-bottom: 0 }
+
+.recipe-header a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.recipe .recipemeta,
+.recipe .summary {
+  margin-top: 5px auto;
+  clear: left;
+}
+
+.recipe .time {
+  color: #92b3d4;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-bottom: 15px;
+}
+
+.recipe .time p {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  padding: 0;
+}
+
+.recipe .time strong {
+  font-weight: normal;
+  text-transform: lowercase;
+  letter-spacing: normal;
+}
+
+.recipe .photo {
+  float: right;
+  width: 110px;
+  height: 110px;
+  margin-left: 15px;
+}
+
+.recipe .left {  margin-bottom: 30px }
+
+.recipe .source p  { color: #989a9b; }
+
+.recipe .source p,
+.recipe .summary a {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  clear: left;
+}
+
+.recipe .ingredient,
+.recipe .instructions,
+.recipe .summary {  font-size: 1.5rem }
+
+li.ingredient {  padding-bottom: 5px }
+
+.recipe strong {  text-transform: uppercase }
+
 /* Smaller than phablet */
 @media (max-width: 550px) {
   .sidebar { font-size: 1.3rem; }
   .sidebar h2 { font-size: 2.5rem; }
   .sidebar h3 { font-size: 1.5rem; }
+  .sidebar input.form-control,
+  .sidebar button, 
+  .sidebar #mc-embedded-subscribe,
+  .sidebar #search-submit {
+    font-size: 1.5rem;
+    padding: 4px 8px;
+    padding-top: 8px;
+    height: auto;
+  }
+  .social-fixed a.btn {
+    width: 39px;
+    font-size: 1.5rem;
+    padding: 4px 2px;
+    padding-top: 8px;
+  }
 }
 
 .sidebar ul { margin: 0.25rem; }
 .sidebar ul.img-list li { list-style: none; }
 .sidebar ul.img-list li img { border-radius: 10px; }
 .sidebar ul.blog-list li { margin: 0rem; text-align: left; }
+
+
+@media (max-width: 637px) {
+    div.subscribe-bottom { display: none; }
+}
 
 /* 
 BODY 
@@ -144,6 +292,183 @@ ABOUT
 .post-preview { text-align: center; }
 .post-preview h3 { font-size: 2.0rem; line-height: 1;  letter-spacing: -.1rem; margin: 0.5rem; }
 .post-preview.column { margin: 0.25rem; }
+
+/*
+POSTS
+ */
+
+/* FIXED SOCIAL SIDEBAR */
+
+ul.social-fixed {
+  position: fixed;
+  top: 37%;
+  bottom: 37%;
+  left: 0;
+  z-index: 15000;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.social-fixed li { margin-bottom: 0; }
+
+.social-fixed a.btn {
+  background: #ffec82;
+  color: #000;
+  border-radius: 0;
+  /*padding: 10px;*/
+  width: 39px;
+}
+
+.social-fixed a.btn:hover,
+.social-fixed a.btn:focus {
+  background: #fff;
+  color: #92b3d4;
+}
+
+.social-fixed a.btn.comments {
+  background: #92b3d4;
+  color: #fff;
+}
+
+.social-fixed a.btn.comments:hover,
+.social-fixed a.btn.comments:focus {
+  background: #fff;
+  color: #ffec82;
+}
+
+.social-fixed a.btn.twitter {
+  background: #55acee;
+  color: #fff;
+}
+
+.social-fixed a.btn.twitter:hover,
+.social-fixed a.btn.twitter:focus {
+  background: #fff;
+  color: #55acee;
+}
+
+.social-fixed a.btn.facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.social-fixed a.btn.facebook:hover,
+.social-fixed a.btn.facebook:focus {
+  background: #fff;
+  color: #3b5998;
+}
+
+.social-fixed a.btn.gplus {
+  background: #dd4b39;
+  color: #fff;
+}
+
+.social-fixed a.btn.gplus:hover,
+.social-fixed a.btn.gplus:focus {
+  background: #fff;
+  color: #dd4b39;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0
+}
+
+media_tag_0 {media_subcode:0}
+media_tag_1 {media_subcode:1}
+
+.btn-social:first-child {
+    left: 6px;
+    top: 6px;
+    bottom: 0;
+    line-height: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    border-right: 0!important
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffec82;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.5rem
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #ffec82;
+    border-radius: 34px;
+    color: #92b3d4;
+    background: 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
+}
+
+.btn-social:hover,
+.btn-social:focus {
+    outline: 0;
+    color: #92b3d4;
+    background: rgba(146, 179, 212, .1)
+}
+
+.btn-social i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s
+}
+
+.btn-social:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear
+}
+@-webkit-keyframes pulse {
+     {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+}
+
+@-moz-keyframes pulse {
+     {
+      -moz-transform: scale(1);
+      transform: scale(1);
+    }
+
+    50% {
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+
+    100% {
+      -moz-transform: scale(1);
+      transform: scale(1);
+    }
+
+}
+
+.fb-comments, .fb-comments * {
+    width:100% !important;
+}
 
 /* 
 FOOTER

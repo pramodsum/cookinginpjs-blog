@@ -17,7 +17,7 @@
 </ul>
 
  <article class="{{post_class}}" id="posts">
-    <div class="text-center">
+    <center>
       <h1>{{title}}</h1>
 
       <div class="post-meta date" style="color: #92b3d4">
@@ -26,7 +26,7 @@
           <br>
           by {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}} <span class="author"><a href="{{author.website}}">{{author.name}}</a></a></span>
       </div>
-    </div>
+    </center>
     <hr>
     <div>
       {{content}}
@@ -57,8 +57,11 @@
         <section class="date">
           <i class="ion-pricetag"></i> {{tags}}
         </section>
+        <section>
+          <div class="fb-like" data-href="{{url}}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        </section>
         <section class="comments">
-          <div class="fb-comments" data-href="{{url}}" data-numposts="5"></div>
+          <div class="fb-comments" data-href="{{url}}" data-width="100%" data-numposts="5"></div>
           {{!-- <div id="disqus_thread"></div> 
             <script type="text/javascript">
                 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
