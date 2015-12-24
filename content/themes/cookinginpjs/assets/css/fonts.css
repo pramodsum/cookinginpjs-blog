@@ -50,6 +50,9 @@ header h1 {
 #about-heading { font-size: 5rem; }
 .post-preview h2 { font-size: 4.5rem; }
 
+/*TAG*/
+h1.tag-title { font-size: 5rem; }
+
 @media (max-width: 900px) {
   .sidebar input,
   .sidebar form input,
@@ -75,6 +78,9 @@ header h1 {
   #about-heading { font-size: 4rem; }
   .post-preview h2 { font-size: 3.5rem; }
 
+  /*TAG*/
+  h1.tag-title { font-size: 4rem; }
+
   /*SIDEBAR*/
   .sidebar { font-size: 1.25rem; }
   .about a { font-size: 1.5rem; }
@@ -98,6 +104,9 @@ header h1 {
 
   /*ABOUT*/
   #about-heading { font-size: 3.75rem; }
+
+  /*TAG*/
+  h1.tag-title { font-size: 3.75rem; }
 
   /*SIDEBAR*/
   .sidebar { font-size: 1.5rem; }
@@ -123,6 +132,9 @@ header h1 {
   /*ABOUT*/
   #about-heading { font-size: 3.25rem; }
   .post-preview h2 { font-size: 2.75rem; }
+
+  /*TAG*/
+  h1.tag-title { font-size: 3.25rem; }
 
   /*SIDEBAR*/
   .sidebar { font-size: 1.25rem; }
