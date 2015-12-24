@@ -1,7 +1,7 @@
 @import "external.css";
 @import "skeleton.css";
-@import "navbar.css";
 @import "fonts.css";
+@import "navbar.css";
 
 /* 
 HEADER 
@@ -64,7 +64,7 @@ SIDEBAR
 .sidebar p { margin: 1.5rem;}
 
 .sidebar form { margin: 1rem; }
-.sidebar form input { margin: 0.5rem; padding: 0.25rem 1rem; padding-bottom: 0rem; line-height: 1.5rem; width: 100%; text-align: center; }
+.sidebar form input { margin: 0.5rem; padding: 0.25rem 1rem; padding-bottom: 0rem; width: 100%; text-align: center; }
 .sidebar input { font-weight: bolder; }
 
 .sidebar h2 { line-height: 1.25; letter-spacing: -.1rem; margin: 1rem; }
@@ -252,12 +252,14 @@ ERROR
 ABOUT
 */
 .post-preview { text-align: center; }
-.post-preview h3 { font-size: 2.0rem; line-height: 1;  letter-spacing: -.1rem; margin: 0.5rem; }
-.post-preview.column { margin: 0.25rem; }
+.post-preview h3 { font-size: 2.0rem; line-height: 1; letter-spacing: -.1rem; }
+.one-third.column { margin-left: 2%; }
 
 /*
 POSTS
  */
+
+h1 a { color: black; }
 
 .embed-responsive{position:relative;display:block;height:0;padding:0;overflow:hidden}
 .embed-responsive .embed-responsive-item,.embed-responsive iframe,.embed-responsive embed,.embed-responsive object,.embed-responsive video{position:absolute;top:0;bottom:0;left:0;width:100%;height:100%;border:0}
@@ -575,6 +577,7 @@ footer {
   padding-top: 2rem;
   text-align: center;
   font-weight: bolder;
+  font-family: fox__catregular;
 }
 
 footer .ion-heart { color: red; }
