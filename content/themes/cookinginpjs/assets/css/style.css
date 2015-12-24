@@ -76,7 +76,7 @@ SIDEBAR
 .sidebar ul.latest-posts li { 
   list-style-image: url("../images/pants-mini.png");
 }
-
+.about a { font-family: end_of_the_dreamregular; text-transform: capitalize; }
 #subscribe-page { display: none; }
 
 .recipe {
@@ -259,8 +259,12 @@ ERROR
 ABOUT
 */
 .post-preview { text-align: center; }
-.post-preview h3 { font-size: 2.0rem; line-height: 1; letter-spacing: -.1rem; }
+.post-preview h3 { line-height: 1; letter-spacing: -.1rem; margin: 0.5rem 0; }
 .one-third.column { margin-left: 2%; }
+.post-preview h2#about, #about-heading { 
+  font-family: end_of_the_dreamregular; 
+  text-transform: capitalize; 
+}
 
 /*
 POSTS
@@ -586,8 +590,8 @@ footer {
   font-weight: bolder;
   font-family: fox__catregular;
 }
-
-footer .ion-heart { color: red; }
+.ion-heart { color: red; }
+#sumu { font-family: end_of_the_dreamregular; text-transform: capitalize; font-size: 2rem; }
 
 /* 
 BUTTONS & INPUTS
