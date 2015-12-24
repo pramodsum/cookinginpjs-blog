@@ -17,18 +17,9 @@
     <link rel="shortcut icon" href="{{asset "images/pants.png"}}">
 
     {{! Styles'n'Scripts }}
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
     <script src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -49,27 +40,6 @@
 
     {{> "header"}}
 
-    <script type="text/javascript">
-      $('.button-collapse').sideNav({
-          menuWidth: 300, // Default is 240
-          edge: 'right', // Choose the horizontal origin
-          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-        }
-      );
-    </script>
-
-    <nav>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
-      </ul>
-      <ul id="slide-out" class="side-nav">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
-      </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    </nav>
-
     <div class="main-content">
       <div class="container post-index">
         <div class="column main-body">
@@ -79,7 +49,7 @@
           {{> "footer"}}
         </div>
         <div class="column sidebar">
-          {{!-- {{> "sidebar"}} --}}
+          {{> "sidebar"}}
         </div>
       </div>
     </div>

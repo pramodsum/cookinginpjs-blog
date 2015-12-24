@@ -1,5 +1,3 @@
-
-
 /* 
 FONTS
 */
@@ -52,15 +50,14 @@ header h1 {
 
   .post-index, #posts, .recipe { font-size: 1.75rem; }
 
-  .sidebar { font-size: 1rem; }
+  .sidebar { font-size: 1.25rem; }
   .sidebar h2 { font-size: 2rem; }
   .sidebar h3 { font-size: 1.5rem; }
-  .sidebar input { font-size: 1rem; }
-
+  .sidebar form input, 
   .sidebar input.form-control,
   .sidebar button, 
   .sidebar #mc-embedded-subscribe,
-  .sidebar #search-submit { font-size: 1.5rem; }
+  .sidebar #search-submit { font-size: 1rem; }
   .social-fixed a.btn { font-size: 1.5rem; }
 }
 
@@ -78,7 +75,7 @@ header h1 {
 
   header h1 { font-size: 7rem; }
 
-  .sidebar { font-size: 1rem; }
+  .sidebar { font-size: 1.25rem; }
   .sidebar h2 { font-size: 2rem; }
   .sidebar h3 { font-size: 1.5rem; }
   .sidebar input { font-size: 1rem; }
@@ -92,3 +89,30 @@ header h1 {
 
 a { text-decoration: none; color: grey;}
 a:hover, a:focus { color: #92b3d4;}
+
+/*
+FONT DEFINITIONS 
+ */
+@font-face {
+  font-family: 'fox__catregular';
+  src: url('../fonts/Fox & Cat-webfont.eot');
+  src: url('../fonts/Fox & Cat-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Fox & Cat-webfont.woff2') format('woff2'),url('../fonts/Fox & Cat-webfont.woff') format('woff'),url('../fonts/Fox & Cat-webfont.ttf') format('truetype'),url('../fonts/Fox & Cat-webfont.svg#fox__catregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'grutchshadedregular';
+  src: url('../fonts/GrutchShaded-webfont.eot');
+  src: url('../fonts/GrutchShaded-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/GrutchShaded-webfont.woff2') format('woff2'),url('../fonts/GrutchShaded-webfont.woff') format('woff'),url('../fonts/GrutchShaded-webfont.ttf') format('truetype'),url('../fonts/GrutchShaded-webfont.svg#grutchshadedregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'end_of_the_dreamregular';
+  src: url('../fonts/End of the dream-webfont.eot');
+  src: url('../fonts/End of the dream-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/End of the dream-webfont.woff2') format('woff2'),url('../fonts/End of the dream-webfont.woff') format('woff'),url('../fonts/End of the dream-webfont.ttf') format('truetype'),url('../fonts/End of the dream-webfont.svg#end_of_the_dreamregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
