@@ -2,14 +2,17 @@
 FONTS
 */
 
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6, footer { 
   font-family: fox__catregular; 
   text-transform: uppercase; 
 }
-.post-meta, input, .sidebar a, .post-footer, .btn { 
+.post-meta, input, .sidebar a, .post-footer, .btn, .page-number,
+.older-posts, .newer-posts { 
   font-family: fox__catregular; 
   text-transform: uppercase; 
 }
+
+.page-number, footer { color: #92b3d4; }
 
 header h1 {
   font-family: grutchshadedregular; 

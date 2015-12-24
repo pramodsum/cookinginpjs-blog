@@ -568,9 +568,12 @@ Read More - Next/Prev Post Links
 /* 
 FOOTER
 */
-.footer {
+footer {
   padding-top: 2rem;
+  text-align: center;
 }
+
+footer .ion-heart { color: red; }
 
 /* 
 BUTTONS & INPUTS
@@ -650,8 +653,8 @@ MOBILE RESIZING
  */
 
 @media (max-width: 755px) {
-  .sidebar form input, .sidebar input.form-control, .sidebar button, .sidebar #mc-embedded-subscribe, .sidebar #search-submit { padding: 0rem 0.25rem; }
-  .sidebar p { margin: 0rem; }
+  .sidebar form input, .sidebar input.form-control, .sidebar button, .sidebar #mc-embedded-subscribe, .sidebar #search-submit { padding: 0rem 0.25rem; width: 100%; }
+  .sidebar p, .sidebar h1, .sidebar h2, .sidebar h3 { margin: 0.5rem 0; }
 }
 
 @media (max-width: 550px) {
