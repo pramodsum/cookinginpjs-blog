@@ -70,6 +70,13 @@ SIDEBAR
 .sidebar h2 { line-height: 1.25; letter-spacing: -.1rem; margin: 1rem; }
 .sidebar h3 { line-height: 1;  letter-spacing: -.1rem; margin: 0.5rem;}
 
+.sidebar ul.blog-list li { 
+  list-style-image: url("../images/mixer-mini.png");
+}
+.sidebar ul.latest-posts li { 
+  list-style-image: url("../images/pants-mini.png");
+}
+
 #subscribe-page { display: none; }
 
 .recipe {
