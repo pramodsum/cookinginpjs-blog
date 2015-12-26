@@ -692,4 +692,5 @@ MOBILE RESIZING
 
 @media (max-width: 400px) {
   .sidebar { display: none; }
+  .main-body { width: 100%; }
 }
