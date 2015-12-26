@@ -46,6 +46,10 @@ header h1 {
 
 .sidebar button, .sidebar #mc-embedded-subscribe, .sidebar #search-submit, .social-fixed a.btn, .button, input[type="submit"], input[type="reset"], input[type="button"] { font-size: 1.5rem; font-weight: normal; }
 
+/*FOOTER*/
+footer { font-size: 1.5rem; }
+#sumu { font-size: 2rem; }
+
 /*ABOUT*/
 #about-heading { font-size: 5rem; }
 .post-preview h2 { font-size: 4.5rem; }
@@ -116,6 +120,10 @@ h1.tag-title { font-size: 5rem; }
   .sidebar input { font-size: 1.5rem; }
 
   .sidebar button, .sidebar #mc-embedded-subscribe, .sidebar #search-submit, .social-fixed a.btn, .button, input[type="submit"], input[type="reset"], input[type="button"] { font-size: 1.5rem; }
+
+  /*FOOTER*/
+  footer { font-size: 1.25rem; }
+  #sumu { font-size: 1.5rem; }
 }
 
 @media (max-width: 400px) {
@@ -148,6 +156,42 @@ h1.tag-title { font-size: 5rem; }
   .sidebar #search-submit { font-size: 1.5rem; }
 
   .social-fixed a.btn { font-size: 1.5rem; }
+
+  /*FOOTER*/
+  footer { font-size: 1rem; }
+  #sumu { font-size: 1.25rem; }
+}
+
+@media (max-width: 320px) {
+  header h1 { font-size: 6rem; }
+
+  /*POSTS*/
+  .post-index h1, #posts h1 { font-size: 2.75rem; }
+  .post-index h2, #posts h2 { font-size: 1.75rem; }
+  .post-index h3, #posts h3 { font-size: 1.25rem; }
+  .post-index h4, #posts h4 { font-size: 1rem; }
+  .post-index h5, #posts h5 { font-size: 0.5rem; }
+  .post-index, #posts, .recipe { font-size: 1.25rem; }
+
+  /*ABOUT*/
+  #about-heading { font-size: 3rem; }
+  .post-preview h2 { font-size: 2.5rem; }
+
+  /*TAG*/
+  h1.tag-title { font-size: 3rem; }
+
+  /*SIDEBAR*/
+  .sidebar { font-size: 1rem; }
+  .about a { font-size: 1.25rem; }
+  .sidebar h2 { font-size: 1.75rem; }
+  .sidebar h3 { font-size: 1.25rem; }
+  .sidebar input { font-size: 1rem; }
+  .sidebar input.form-control,
+  .sidebar button, 
+  .sidebar #mc-embedded-subscribe,
+  .sidebar #search-submit { font-size: 1.25rem; }
+
+  .social-fixed a.btn { font-size: 1.25rem; }
 }
 
 a { text-decoration: none; color: grey;}
