@@ -73,7 +73,8 @@ SIDEBAR
 .sidebar ul.blog-list li { 
   list-style-image: url("../images/mixer-mini.png");
 }
-.sidebar ul.latest-posts li { 
+.sidebar ul#latest-posts li { 
+  text-align: left;
   list-style-image: url("../images/pants-mini.png");
 }
 .about a { font-family: end_of_the_dreamregular; text-transform: capitalize; }
