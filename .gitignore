@@ -10,6 +10,12 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*/*/*/.DS_Store
+*/*/*/*/.DS_Store
+*/*/*/*/*/.DS_Store
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
@@ -34,3 +40,4 @@ test/
 
 node_modules/
 *.db
+npm-debug.log

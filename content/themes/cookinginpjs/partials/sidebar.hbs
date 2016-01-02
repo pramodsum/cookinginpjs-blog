@@ -36,10 +36,12 @@
 <h2>Latest Noms</h2>
 <ul id="latest-posts"></ul>
 <br>
-<form>
-  <input class="form-control" id="search-field" placeholder="WHERE'S MY NOMS?!"/>
-  <input id="search-submit" type="submit" class="btn btn-default" value="HELP ME!">
-</form>
+<div id="search-posts">
+  <form>
+    <input id="search-field" type="text" placeholder="WHERE'S MY NOMS?!"/><br>
+    <input id="search-submit" type="submit" class="btn btn-default" value="HELP ME!">
+  </form>
+</div>
 
 <script>
 $("#search-field").ghostHunter({
@@ -52,33 +54,13 @@ $("#search-field").ghostHunter({
 
 {{!-- ABOUT US --}}
 <h2>Hello & Welcome</h2>
-<p><img class="img-responsive img-circle" data-pin-no-hover="true" src="{{asset "images/about.jpg"}}"></p>
-<p>
+<p><img class="circle" data-pin-no-hover="true" src="{{asset "images/about.jpg"}}"></p>
+<div class="about"><p>
   This is the blog of <a href="http://sumninjacode.io">Sumu</a> and <a href="http://dearuniverse.me">Anu</a>, wayfaring adventurers and aspiring home cooks.
-</p>
+</p></div>
 <a href="{{@blog.url}}/about">More about us!</a>
 
 <img class="divider" src="{{asset "images/divider.png"}}">
-
-{{!-- SUBSCRIBE --}}
-<h2>Don't Fight It</h2>
-<p>You know you love us. Just follow your, err, stomach man. Let us fix that rumbly in your tumbly.</p>
-
-<form action="//cookinginpjs.us9.list-manage.com/subscribe/post?u=2aa1dc89f268f2587a11ea242&amp;id=220e63abc7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  <div class="form-group">
-    <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Join the dark side!">
-  </div>
-  <div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>
-  <div style="position: absolute; left: -5000px;"><input type="text" name="b_2aa1dc89f268f2587a11ea242_220e63abc7" tabindex="-1" value=""></div>
-  <div class="clear"><input type="submit" value="DO IT" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default animated infinite tada"></div>
-</form>
-
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-
-<img class="divider" src="{{asset "images/divider-mixer.png"}}">
 
 {{!-- RECIPE HIGHLIGHTS --}}
 <h2>*Cue Drool*</h2>
@@ -121,12 +103,36 @@ $("#search-field").ghostHunter({
   </center></li>
 </ul>
 
+<img class="divider" src="{{asset "images/divider-mixer.png"}}">
+
+{{!-- SUBSCRIBE --}}
+<h2>Don't Fight It</h2>
+<p>You know you love us. Just follow your, err, stomach man. Let us fix that rumbly in your tumbly.</p>
+
+<div id="subscribe-page">
+    <input id="subscribe-btn" type="submit" class="btn btn-default animated infinite tada" value="DO IT">
+</div>
+<div id="inline-subscribe">
+  <form action="//cookinginpjs.us9.list-manage.com/subscribe/post?u=2aa1dc89f268f2587a11ea242&amp;id=220e63abc7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div class="form-group">
+      <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Join the dark side!">
+    </div>
+    <div id="mce-responses" class="clear">
+      <div class="response" id="mce-error-response" style="display:none"></div>
+      <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_2aa1dc89f268f2587a11ea242_220e63abc7" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="DO IT" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default animated infinite tada"></div>
+  </form>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</div>
+
 <img class="divider" src="{{asset "images/divider.png"}}">
 
 {{!-- MORE BLOGS --}}
 <h2>Still not Satisfied?</h2>
 <p>Check out some other pretty awesome food blogs</p>
-<ul>
+<ul class="blog-list">
   <li><a href="http://uppukhara.com">UppuKhara</a></li>
   <li><a href="http://www.loveandlemons.com">Love & Lemons</a></li>
   <li><a href="http://www.iamafoodblog.com">I am a food blog</a></li>
@@ -139,16 +145,3 @@ $("#search-field").ghostHunter({
   <li><a href="http://www.thefirstmess.com/">The First Mess</a></li>
   <li><a href="http://www.thecookierookie.com">The Cookie Rookie</a></li>
 </ul>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Cooking In Pajamas -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2905840351559408"
-     data-ad-slot="1776887355"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-

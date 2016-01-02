@@ -18,7 +18,7 @@
           <i class="ion-pricetag"></i> {{tags}}
           <br>
           <i class="ion-calendar"></i> <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
-          <i class="ion-chatbubble"></i> <a href="{{url}}#disqus_thread">Leave a Comment</a>
+          <i class="ion-chatbubble"></i> <a href="{{url}}#comments"><span class="fb-comments-count" data-href="{{url}}"></span> Comments</a>
           <br>
           by {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}} <span class="author"><a href="{{author.website}}">{{author.name}}</a></a></span>
       </div>
@@ -33,7 +33,7 @@
   </p>
   <hr>
   <div class="post-content">
-    {{content words="150"}}<a href="{{url}}" title="{{title}}" class="btn more-link">Read&nbsp;more&nbsp;</a></p>
+    {{content words="150"}}<a href="{{url}}" title="{{title}}" class="button button-primary more-link">Read&nbsp;more&nbsp;</a></p>
   </div>
   <br>
 

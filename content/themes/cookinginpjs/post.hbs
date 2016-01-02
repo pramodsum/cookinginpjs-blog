@@ -8,25 +8,28 @@
 {{#post}}
 
 <!-- more visible social buttons for post -->
-<ul class="social-fixed">
+{{!-- <ul class="social-fixed">
   <li><a class="btn subscribe" href="http://eepurl.com/7YH6z"><i class="ion ion-social-rss"></i></a></li>
   <li><a class="btn comments" href="{{url}}#disqus_thread"><i class="ion ion-chatbubble"></i></a></li>
   <li><a class="btn twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"><i class="ion ion-social-twitter"></i></a></li>
   <li><a class="btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"><i class="ion ion-social-facebook"></i></a></li>
   <li><a class="btn gplus" href="https://plus.google.com/share?url={{url absolute="true"}}"><i class="ion ion-social-googleplus"></i></a></li>
-</ul>
+</ul> --}}
 
  <article class="{{post_class}}" id="posts">
-    <div class="text-center">
+    <center>
       <h1>{{title}}</h1>
 
       <div class="post-meta date" style="color: #92b3d4">
           <i class="ion-calendar"></i> <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
-          <i class="ion-chatbubble"></i> <a href="{{url}}#disqus_thread">Leave a Comment</a>
+          <i class="ion-chatbubble"></i> <a href="{{url}}#comments"><span class="fb-comments-count" data-href="{{url}}"></span> Comments</a>
           <br>
           by {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}} <span class="author"><a href="{{author.website}}">{{author.name}}</a></a></span>
+        <section>
+          <div class="fb-like" data-href="{{url}}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        </section>
       </div>
-    </div>
+    </center>
     <hr>
     <div>
       {{content}}
@@ -57,8 +60,9 @@
         <section class="date">
           <i class="ion-pricetag"></i> {{tags}}
         </section>
-        <section class="comments">
-          <div id="disqus_thread"></div>
+        <section id="comments" class="comments">
+          <div class="fb-comments" data-href="{{url}}" data-numposts="5"></div>
+          {{!-- <div id="disqus_thread"></div>
             <script type="text/javascript">
                 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
                 var disqus_shortname = 'cookinginpjs'; // required: replace example with your forum shortname
@@ -70,7 +74,7 @@
                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                 })();
             </script>
-            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>--}}
         </section>
 
       </div>

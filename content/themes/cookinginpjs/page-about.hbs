@@ -1,21 +1,100 @@
-{{!< default}}
+{{!< about-default}}
 
-<img class="img-responsive img-rounded" src="{{asset "images/about.jpg"}}">
+
 
 {{!-- <img class="img-responsive img-rounded" src="{{asset "images/monkeys.jpg"}}"> --}}
-<center><p>
-    <h3>
-        Hello and welcome :)
-        <br>
-        <small>
-            This is the blog of Sumu and Anu, wayfaring adventurers and aspiring home cooks.
-        </small>
-    </h3>
-</p></center>
+<center>
+  <img src="{{asset "images/about.jpg"}}">
+  <div class="intro">
+      <h3>
+          <span id="about-heading">Hello and welcome :)</span>
+          <br>
+          <small>
+              This is the blog of Sumu and Anu, wayfaring adventurers and aspiring home cooks.
+          </small>
+      </h3>
+  </div>
+</center>
+<hr>
 
-<p>They say that poetry is the food of love, but we disagree; food is the food of love. Cinnamon buns soothe your stress cut edges, macarons are fluffy-sweet puppy love, and nothing says “this is my best friend” like a hilariously botched Jello recipe.</p>
-<p>We've known each other pretty much forever, and this blog is the ongoing narrative of our friendship, which has, by turns, been burnt, crispy, savory, sweet, and decadent. These are the tales of our culinary exploits, from figuring out poached eggs (a la Julie and Julia) to identifying the right balance of salt and cayenne for South Indian rasam. We're not always on the same page, or in the same state, or even on the same continent, but two things are generally true: at least one of us is dreaming about food, and at least one of us is wearing her pajamas.</p>
+{{#post}}
+{{content}}
+{{/post}}
 
 <center><p>Email both of us at <a href="mailto:team@cookinginpjs.com">team@cookinginpjs.com</a>.<br>If you want to contact either of us individually, please email <a href="mailto:sumu@cookinginpjs.com">Sumedha</a> or <a href="mailto:anu@cookinginpjs.com">Anagha</a></center>
 </p>
-{{!-- <img class="img-responsive img-rounded" src="{{asset "images/twins.jpg"}}"> --}}
+
+<hr>
+
+{{!-- TODO: MAYBE PUT PINTEREST WIDGET INSTEAD? --}}
+{{!-- <div id="pinterest-widget">
+  <a data-pin-do="embedBoard"
+    href="https://www.pinterest.com/pramodsum/cooking-in-pajamas/"
+    data-pin-scale-height="480"
+    data-pin-scale-width="220"></a>
+</div> --}}
+
+{{!-- RECIPE HIGHLIGHTS --}}
+<div class="post-preview">
+  <h2 id="about">*Cue Drool*</h2>
+  <div class="row">
+    <div class="one-third column">
+      <a href="{{@blog.url}}/little-bites-of-heaven/">
+        <img src="{{asset "images/brownies.jpg"}}" data-pin-no-hover="true"/>
+        <span class="text-content"><span><h3>Cheesecake Brownie Bites</h3></span></span>
+      </a>
+    </div>
+    <div class="one-third column">
+        <a href="{{@blog.url}}/quinoa-veggie-burger/">
+          <img src="{{asset "images/quinoa.jpg"}}" data-pin-no-hover="true"/>
+          <span class="text-content"><span><h3>Quinoa Veggie Patty</h3></span></span>
+        </a>
+    </div>
+    <div class="one-third column">
+        <a href="{{@blog.url}}/its-about-pho-king-time/">
+          <img src="{{asset "images/pho.jpg"}}" data-pin-no-hover="true"/>
+          <span class="text-content"><span><h3>Vegetarian Pho</h3></span></span>
+        </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="one-third column">
+        <a href="{{@blog.url}}/the-love-child-of-pumpkin-pie-and-tiramisu/">
+          <img src="{{asset "images/tiramisu.jpg"}}" data-pin-no-hover="true"/>
+          <span class="text-content"><span><h3>Pumpkin Tiramisu</h3></span></span>
+        </a>
+    </div>
+    <div class="one-third column">
+        <a href="{{@blog.url}}/sushi-go-round/">
+          <img src="{{asset "images/sushi.jpg"}}" data-pin-no-hover="true"/>
+          <span class="text-content"><span><h3>Vegetarian Sushi</h3></span></span>
+        </a>
+    </div>
+    <div class="one-third column">
+        <a href="{{@blog.url}}/damn-son-those-are-some-seriously-loaded-fries/">
+          <img src="{{asset "images/fries.jpg"}}" data-pin-no-hover="true"/>
+          <span class="text-content"><span><h3>Mexican Loaded Fries</h3></span></span>
+        </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="one-third column">
+      <a href="{{@blog.url}}/gettin-your-morning-buzz/">
+        <img src="{{asset "images/coffee.jpeg"}}" data-pin-no-hover="true"/>
+        <span class="text-content"><span><h3>Coffee Cake Cupcakes</h3></span></span>
+      </a>
+    </div>
+    <div class="one-third column">
+        <a href="{{@blog.url}}/galentines-day-cupcakes/">
+          <img src="{{asset "images/cupcakes.jpeg"}}" data-pin-no-hover="true"/>
+          <span class="text-content"><span><h3>Red Velvet Cupcakes</h3></span></span>
+        </a>
+    </div>
+    <div class="one-third column">
+        <a href="{{@blog.url}}/well-son-when-a-croissant-loves-a-donut/">
+          <img src="{{asset "images/cronuts.jpeg"}}" data-pin-no-hover="true"/>
+          <span class="text-content"><span><h3>Cronut Bites</h3></span></span>
+        </a>
+    </div>
+  </div>
+</div>
