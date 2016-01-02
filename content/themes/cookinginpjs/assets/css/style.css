@@ -3,8 +3,8 @@
 @import "fonts.css";
 @import "navbar.css";
 
-/* 
-HEADER 
+/*
+HEADER
 */
 
 header {
@@ -38,7 +38,7 @@ header {
   #nav-wrapper, #nav-wrapper .menu ul {
     text-align: center;
   }
-  
+
   .slicknav_menu { display:none; }
 
   #nav-wrapper .menu li {
@@ -57,8 +57,8 @@ header {
     font-weight:700;
   }
 
-/* 
-SIDEBAR 
+/*
+SIDEBAR
 */
 .sidebar { text-align: center; width: 20%; }
 .sidebar p { margin: 1.5rem;}
@@ -70,10 +70,10 @@ SIDEBAR
 .sidebar h2 { line-height: 1.25; letter-spacing: -.1rem; margin: 1rem; }
 .sidebar h3 { line-height: 1;  letter-spacing: -.1rem; margin: 0.5rem;}
 
-.sidebar ul.blog-list li { 
+.sidebar ul.blog-list li {
   list-style-image: url("../images/mixer-mini.png");
 }
-.sidebar ul#latest-posts li { 
+.sidebar ul#latest-posts li {
   text-align: left;
   list-style-image: url("../images/pants-mini.png");
 }
@@ -222,7 +222,7 @@ li.ingredient {  padding-bottom: 5px; margin-bottom: 0;}
 
 @media (max-width: 550px) {
   .sidebar input.form-control,
-  .sidebar button, 
+  .sidebar button,
   .sidebar #mc-embedded-subscribe,
   .sidebar #search-submit {
     padding: 4px 8px;
@@ -236,8 +236,8 @@ li.ingredient {  padding-bottom: 5px; margin-bottom: 0;}
   }
 }
 
-/* 
-BODY 
+/*
+BODY
 */
 
 body {
@@ -247,12 +247,12 @@ body {
 
 .main-body { width: 75%; }
 
-/* 
+/*
 TAGS
 */
 h1.tag-title { font-family: end_of_the_dreamregular; text-transform: capitalize; text-align: center; }
 
-/* 
+/*
 ERROR
 */
 .error { text-align: center; }
@@ -261,15 +261,30 @@ ERROR
 .error h1 small { font-size: 3rem; color: rgba(0,0,0,0.5); }
 .error img { width: 100%; max-width: 1000px; }
 
-/* 
+/*
 ABOUT
 */
 .post-preview { text-align: center; }
 .post-preview h3 { line-height: 1; letter-spacing: -.1rem; margin: 0.5rem 0; }
 .one-third.column { margin-left: 2%; }
-.post-preview h2#about, #about-heading { 
-  font-family: end_of_the_dreamregular; 
-  text-transform: capitalize; 
+.post-preview h2#about, #about-heading {
+  font-family: end_of_the_dreamregular;
+  text-transform: capitalize;
+}
+#pinterest-widget span { width:100%; }
+#pinterest-widget span,
+#pinterest-widget a:before,
+#pinterest-widget a:after {
+  box-shadow: 0 0 0 transparent !important;
+}
+
+#pinterest-widget > span:first-child {
+  padding: 0 !important;
+  background: transparent;
+}
+
+#pinterest-widget > span > span:first-child {
+  display: none !important;
 }
 
 /*
@@ -452,7 +467,7 @@ media_tag_1 {media_subcode:1}
 
 }
 
-/* 
+/*
 Read More - Next/Prev Post Links
 */
 
@@ -529,7 +544,7 @@ Read More - Next/Prev Post Links
 .read-next-story.prev .post:before {
     content: "You Might Enjoy";
 }
-.read-next-story .post:before:hover { 
+.read-next-story .post:before:hover {
     color: #222;
     border: rgba(0,0,0,0.5) 1px solid;
     background: white;
@@ -587,7 +602,7 @@ Read More - Next/Prev Post Links
 }
 
 
-/* 
+/*
 FOOTER
 */
 footer {
@@ -599,7 +614,7 @@ footer {
 .ion-heart { color: red; }
 #sumu { font-family: end_of_the_dreamregular; text-transform: capitalize; }
 
-/* 
+/*
 BUTTONS & INPUTS
 */
 
