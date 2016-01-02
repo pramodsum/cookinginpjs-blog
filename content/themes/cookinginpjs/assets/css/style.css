@@ -501,7 +501,7 @@ Read More - Next/Prev Post Links
     background-size: cover;
     overflow: hidden;
 }
-.read-next-story p { text-shadow: 0.5px 0.5px black; }
+.read-next-story p { text-shadow: 0.5px 0.5px white; }
 .read-next-story:hover {
     background: rgba(255, 236, 130, 0.25);
     color: rgba(0,0,0,0.5);
