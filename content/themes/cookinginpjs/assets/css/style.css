@@ -498,6 +498,7 @@ media_tag_1 {media_subcode:1}
     position: relative;
     text-align: center;
     color: #fff;
+    text-shadow: 0.5px 0.5px black;
     background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
@@ -562,6 +563,7 @@ media_tag_1 {media_subcode:1}
 
 .read-next-story.no-cover h1 {
   color: black;
+  text-shadow: 0.5px 0.5px white;
 }
 
 .read-next-story.no-cover:before {
