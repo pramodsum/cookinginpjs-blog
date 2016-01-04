@@ -468,9 +468,9 @@ media_tag_1 {media_subcode:1}
 
 }
 
-/*
-Read More - Next/Prev Post Links
-*/
+/* ==========================================================================
+   7. Read More - Next/Prev Post Links
+   ========================================================================== */
 
 .read-next {
     display: -webkit-box;
@@ -482,7 +482,6 @@ Read More - Next/Prev Post Links
     -ms-flex-align: stretch;
     align-items: stretch;
     margin-top: 10rem;
-    padding: 10px;
 }
 
 .read-next-story {
@@ -498,14 +497,13 @@ Read More - Next/Prev Post Links
     text-decoration: none;
     position: relative;
     text-align: center;
-    background: rgba(146, 179, 212, 0.25) no-repeat center center;
+    color: #fff;
+    background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
-.read-next-story p { text-shadow: 0.5px 0.5px black; }
-.read-next-story:hover {
-    background: rgba(255, 236, 130, 0.25);
-    color: rgba(0,0,0,0.5);
+.read-next-story:hover:before {
+    background: rgba(0,0,0,0.4);
     transition: all 0.2s ease;
 }
 .read-next-story:hover .post:before {
@@ -522,46 +520,39 @@ Read More - Next/Prev Post Links
     right: 0;
     bottom: 0;
     left: 0;
+    /*background: rgba(0,0,0,0.4);*/
     transition: all 0.5s ease;
 }
 
 .read-next-story .post {
     padding-top: 6rem;
     padding-bottom: 6rem;
-}
-
-.read-next a:hover {
-  text-decoration: none;
+    width: 100%;
 }
 
 .read-next-story .post:before {
     content: "Read This Next";
-    color: rgba(0,0,0,0.5);
-    padding: 15px 6px 10px 7px;
+    padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
-    border: rgba(0,0,0,0.5) 1px solid;
+    color: rgba(255,255,255,0.8);
+    border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
     transition: all 0.5s ease;
+    z-index: 100;
 }
 .read-next-story.prev .post:before {
     content: "You Might Enjoy";
 }
-.read-next-story .post:before:hover {
-    color: #222;
-    border: rgba(0,0,0,0.5) 1px solid;
-    background: white;
-}
 
 .read-next-story h1 {
-    margin-top: 1rem;
-    text-transform: capitalize;
-    font-family: end_of_the_dreamregular;
-    color: black;
+    margin-top: 2rem;
+    color: #fff;
 }
 
 .read-next-story p {
     margin: 0;
+    color: rgba(255,255,255,0.8);
 }
 
 /* Special styles for posts with no cover images */
@@ -569,8 +560,8 @@ Read More - Next/Prev Post Links
     background: rgba(255, 236, 130, 0.25);
 }
 
-.read-next-story.no-cover:hover {
-    background: rgba(146, 179, 212, 0.25);
+.read-next-story.no-cover h1 {
+  color: black;
 }
 
 .read-next-story.no-cover:before {
@@ -582,7 +573,7 @@ Read More - Next/Prev Post Links
     border-color: rgba(0,0,0,0.2);
 }
 
-.read-next-story.no-cover h1 {
+.read-next-story.no-cover h2 {
     color: rgba(0,0,0,0.8);
 }
 
@@ -603,6 +594,81 @@ Read More - Next/Prev Post Links
     right: 0;
     margin: 0;
 }
+
+/*
+Pagination
+*/
+
+/* The main wrapper for our pagination links */
+/*.pagination {
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    margin: 4rem auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    color: #9EABB3;
+    text-align: center;
+}
+
+.pagination a {
+    color: #9EABB3;
+    transition: all 0.2s ease;
+}*/
+
+/* Push the previous/next links out to the left/right */
+/*.older-posts,
+.newer-posts {
+    position: absolute;
+    display: inline-block;
+    padding: 0 15px;
+    border: #bfc8cd 1px solid;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+}
+
+.older-posts {
+    right: 0;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 2px 0;
+    min-width: 100px;
+}
+
+.newer-posts {
+    left: 0;
+}
+
+.older-posts:hover,
+.newer-posts:hover {
+    color: #889093;
+    border-color: #98a0a4;
+}
+
+.extra-pagination {
+    display: none;
+    border-bottom: #EBF2F6 1px solid;
+}
+.extra-pagination:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px;
+}
+.extra-pagination .pagination {
+    width: auto;
+}*/
 
 
 /*
@@ -711,4 +777,98 @@ MOBILE RESIZING
 @media (max-width: 400px) {
   .sidebar { display: none; }
   .main-body { width: 100%; }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .read-next {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .read-next p {
+        display: none;
+    }
+
+    .read-next-story.no-cover + .read-next-story.no-cover {
+        border-top: rgba(0,0,100,0.06) 1px solid;
+        border-left: none;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .read-next {
+        margin-top: 2rem;
+        margin-bottom: -37px;
+    }
+
+    .read-next .post {
+        width: 100%;
+    }
+
+}
+
+/* ==========================================================================
+   13. Animations
+   ========================================================================== */
+
+/* Used to fade in title/desc on the home page */
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* Used to bounce .scroll-down on home page */
+@-webkit-keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
+    }
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
+    }
+    40% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
+    }
+    60% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
+    }
 }
