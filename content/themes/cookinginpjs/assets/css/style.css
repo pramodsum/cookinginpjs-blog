@@ -80,6 +80,18 @@ SIDEBAR
 .about a { font-family: end_of_the_dreamregular; text-transform: capitalize; }
 #subscribe-page { display: none; }
 
+.ig-b- { display: inline-block; }
+.ig-b- img { visibility: hidden; }
+/*.ig-b-:hover { background-position: 0 -60px; }*/
+/*.ig-b-:active { background-position: 0 -120px; }*/
+.ig-b-v-24 {
+  width: 100%;
+  height: auto;
+  max-width: 75px;
+  background: url("../images/insta.png") no-repeat 0 0;
+  background-size: contain;
+}
+
 .recipe {
   color: black;
   font-style: normal;
@@ -503,8 +515,9 @@ media_tag_1 {media_subcode:1}
     background-size: cover;
     overflow: hidden;
 }
-.read-next-story:hover:before {
-    background: rgba(0,0,0,0.4);
+.read-next-story:hover {
+    text-decoration: none;
+    background: rgba(0,0,0,0.7);
     transition: all 0.2s ease;
 }
 .read-next-story:hover .post:before {
@@ -521,7 +534,7 @@ media_tag_1 {media_subcode:1}
     right: 0;
     bottom: 0;
     left: 0;
-    /*background: rgba(0,0,0,0.4);*/
+    background: rgba(0,0,0,0.4);
     transition: all 0.5s ease;
 }
 
