@@ -766,7 +766,7 @@ ALERT DISMISSABLE
 /*
 IMAGES
  */
-img { border-radius: 10px; }
+img, .media-grid a img, .instansive.square-image .in-image { border-radius: 10px !important; }
 .circle { border-radius: 50%; }
 .author-thumb { border-radius: 50%; width: 1.5em; }
 #nav-wrapper img { border-radius: 0 !important; float: left; }

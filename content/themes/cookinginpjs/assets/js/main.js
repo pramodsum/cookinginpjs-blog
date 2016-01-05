@@ -47,19 +47,6 @@ $(document).ready(function() {
   //       // empty tweet model
   //       $scope.tweetsResult = [];
 
-  //       // initiate masonry.js
-  //       $scope.msnry = new Masonry('#tweet-list', {
-  //         columnWidth: 320,
-  //         itemSelector: '.tweet-item',
-  //         transitionDuration: 0,
-  //         isFitWidth: true
-  //       });
-
-  //       // layout masonry.js on widgets.js loaded event
-  //       twttr.events.bind('loaded', function () {
-  //         $scope.msnry.reloadItems();
-  //         $scope.msnry.layout();
-  //       });
 
   //       $scope.getTweets();
   //     }
