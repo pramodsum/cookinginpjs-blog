@@ -18,6 +18,7 @@
       cb(recent);
     });
   };
+
   // Gets called on document ready
   $(function() {
     // Display 5 posts
@@ -30,6 +31,15 @@
       }
     });
   });
+
+  var feed = new Instafeed({
+    get: 'user',
+    userId: 2462667315,
+    accessToken: '2462667315.467ede5.6a8150827314439e9d18ba4c52596886',
+    sortBy: 'most-liked',
+  });
+  feed.run();
+
 </script>
 
 {{!-- RECENT POSTS --}}
@@ -68,9 +78,14 @@ $("#search-field").ghostHunter({
 {{!-- RECIPE HIGHLIGHTS --}}
 <h2>*Cue Drool*</h2>
 
+{{!-- INSTAFEED --}}
+<div id="instafeed"></div>
+
 <!-- SnapWidget -->
-<script src="http://snapwidget.com/js/snapwidget.js"></script>
-<iframe src="http://snapwidget.com/in/?u=Y29va2luZ2lucGpzfGlufDEyNXwxfDEwfHxub3wxMHxub25lfG9uU3RhcnR8bm98eWVz&ve=050116" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+{{!-- <script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/in/?u=Y29va2luZ2lucGpzfGlufDEyNXwxfDEwfHxub3wxMHxub25lfG9uU3RhcnR8bm98eWVz&ve=050116" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe> --}}
+
+<img class="divider" src="{{asset "images/divider-mixer.png"}}">
 
 <img class="divider" src="{{asset "images/divider-mixer.png"}}">
 
