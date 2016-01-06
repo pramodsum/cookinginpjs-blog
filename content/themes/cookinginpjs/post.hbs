@@ -58,7 +58,7 @@
     <div class="post-footer text-center">
 
         <section class="date">
-          <i class="ion-pricetag"></i> {{tags}}
+          {{tags separator=" #" prefix="#"}}
         </section>
         <section id="comments" class="comments">
           <div class="fb-comments" data-href="{{@blog.url}}{{url}}" data-numposts="5" data-width="100%" data-order-by="social"></div>
