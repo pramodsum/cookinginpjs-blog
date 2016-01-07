@@ -83,11 +83,35 @@ SIDEBAR
 
 #instafeed a {
   padding:5px 5px 1px 5px;
-  margin:10px;
+  margin:5px;
   border:1px solid #e1e1e1;
   display:inline-block;
   border-radius: 4px;
-  position:relative;
+  background: white;
+}
+
+.sidebar #instafeed a {
+  display: inline;
+  float: left;
+  padding: 10px 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+  z-index:0;
+}
+
+.post-preview #instafeed a {
+  width: 30%;
+}
+
+#instafeed a img {
+  /*width: 50%;*/
+  width: 100%;
 }
 
 #instafeed .likes {
