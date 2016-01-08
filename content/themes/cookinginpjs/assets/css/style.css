@@ -85,7 +85,7 @@ SIDEBAR
 .about a { font-family: end_of_the_dreamregular; text-transform: capitalize; }
 #subscribe-page { display: none; }
 
-/*INSTAFEED - ISNTAGRAM */
+/*INSTAFEED - INSTAGRAM */
 
 .post-preview #instafeed a {
   width: 30%;
@@ -108,10 +108,6 @@ SIDEBAR
 
 .overlay:hover:before{
   display: block;
-}
-
-.red:before {
-  background-color:rgba(222,89,135,0.8);
 }
 
 #instafeed a {
