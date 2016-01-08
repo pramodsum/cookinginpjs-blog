@@ -8,6 +8,10 @@
 HEADER
 */
 
+a:hover {
+  text-decoration: none !important;
+}
+
 header {
   padding-top: 100px;
   padding-bottom: 20px;
@@ -81,15 +85,39 @@ SIDEBAR
 .about a { font-family: end_of_the_dreamregular; text-transform: capitalize; }
 #subscribe-page { display: none; }
 
+/*INSTAFEED - ISNTAGRAM */
+
 .post-preview #instafeed a {
   width: 30%;
 }
 
-#instafeed a img {
-  width: 100%;
+.overlay {
+  position: relative;
+}
+
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  z-index:0;
+}
+
+.overlay:hover:before{
+  display: block;
+}
+
+.red:before {
+  background-color:rgba(222,89,135,0.8);
 }
 
 #instafeed a {
+  width: 100%;
+  height: 200px;
+  background-size:cover;
   text-align: center;
   padding:5px 5px 1px 5px;
   margin:0.25rem;
@@ -99,11 +127,10 @@ SIDEBAR
   position:relative;
 }
 
-#instafeed a:hover img {
+/*#instafeed a:hover {
   opacity: 0.35;
   filter: alpha(opacity=35);
-  /*background:rgba(222,89,135,0.8);*/
-}
+}*/
 
 #instafeed .likes {
   font-family:sans-serif;
@@ -564,11 +591,13 @@ media_tag_1 {media_subcode:1}
     background-size: cover;
     overflow: hidden;
 }
+
 .read-next-story:hover {
     text-decoration: none;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.2);
     transition: all 0.2s ease;
 }
+
 .read-next-story:hover .post:before {
     color: #222;
     background: #fff;
@@ -583,7 +612,7 @@ media_tag_1 {media_subcode:1}
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.2);
     transition: all 0.5s ease;
 }
 
@@ -591,6 +620,7 @@ media_tag_1 {media_subcode:1}
     padding-top: 6rem;
     padding-bottom: 6rem;
     width: 100%;
+    z-index: 100;
 }
 
 .read-next-story .post:before {
@@ -602,7 +632,6 @@ media_tag_1 {media_subcode:1}
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
     transition: all 0.5s ease;
-    z-index: 100;
 }
 .read-next-story.prev .post:before {
     content: "You Might Enjoy";
