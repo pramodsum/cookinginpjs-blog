@@ -113,16 +113,22 @@ SIDEBAR
 
 #instafeed a {
   width: 100%;
-  height: 200px;
-  background-size:cover;
   text-align: center;
-  padding:5px 5px 1px 5px;
   margin:0.25rem;
-  border:1px solid #e1e1e1;
   display:inline-block;
   border-radius: 4px;
   position:relative;
 }
+
+#instafeed a img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+#instafeed .ion-ios-heart { color: LightCoral; }
+#instafeed .ion-chatbubble { color: SlateBlue; }
+#instafeed i { text-shadow: none; }
 
 #instafeed .likes {
   font-family:sans-serif;
@@ -130,7 +136,7 @@ SIDEBAR
   position:absolute;
   color: black;
   right:5px;
-  top:45%;
+  top:42%;
   left:5px;
   text-align:center;
   height: auto;
