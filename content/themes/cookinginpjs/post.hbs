@@ -21,6 +21,8 @@
       <h1>{{title}}</h1>
 
       <div class="post-meta date" style="color: #92b3d4">
+          {{tags separator=" #" prefix="#"}}
+          <br>
           <i class="ion-calendar"></i> <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
           <i class="ion-chatbubble"></i> <a href="{{url}}#comments"><span class="fb-comments-count" data-href="{{url}}"></span> Comments</a>
           <br>
