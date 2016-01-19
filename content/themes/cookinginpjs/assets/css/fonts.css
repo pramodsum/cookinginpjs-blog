@@ -1,4 +1,15 @@
-a:hover { text-decoration: none; }
+.post-content a,
+.post-content p a {
+  color: #FFEC96 !important;
+  text-shadow: #92b3d4 0.5px 0.5px;
+}
+
+.post-content .more-link {
+  color: grey !important;
+  text-shadow: none;
+}
+
+a:hover { color: #92b3d4 !important; text-decoration: }
 
 h1, h2, h3, h4, h5, h6, footer {
   font-family: fox__catregular;
