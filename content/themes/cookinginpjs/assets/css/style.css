@@ -390,6 +390,14 @@ h1 a { color: black; }
 .embed-responsive.embed-responsive-16by9{padding-bottom:56.25%}
 .embed-responsive.embed-responsive-4by3{padding-bottom:75%}
 
+#social-sharing {
+  line-height: 1;
+}
+
+#social-sharing img {
+  max-height: 50px;
+}
+
 /* FIXED SOCIAL SIDEBAR */
 
 ul.social-fixed {
