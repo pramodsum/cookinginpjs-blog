@@ -9,10 +9,10 @@
 
     success: function(results){
       if(results.meta.code == 200){
-        console.log(results);
+        // console.log(results);
         for(var i = 0; i < results.data.length; i++) {
           var obj = results.data[i];
-          console.log(obj);
+          // console.log(obj);
           var html = '<a href="' + obj.link + '" class="overlay" >' +
             '<img src="' + obj.images.standard_resolution.url + '">' +
             '<div class="likes"><i class="ion-ios-heart"></i>' + obj.likes.count + ' ' +
@@ -25,4 +25,3 @@
     }
   });
 })(jQuery);
-

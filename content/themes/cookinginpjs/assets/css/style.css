@@ -85,6 +85,10 @@ SIDEBAR
 .about a { font-family: end_of_the_dreamregular; text-transform: capitalize; }
 #subscribe-page { display: none; }
 
+#challenge-count .author-thumb {
+  width: 100%;
+}
+
 /*INSTAFEED - INSTAGRAM */
 
 .post-preview #instafeed a {
