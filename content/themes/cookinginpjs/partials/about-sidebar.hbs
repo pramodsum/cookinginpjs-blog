@@ -1,96 +1,16 @@
-<script>
-  var loadRecentPosts = function(amount, cb) {
-    var rss = $('link[type="application/rss+xml"]').attr('href');
-    $.get(rss, function(data) {
-      var parsed = $.parseXML(data);
-      // Only display the first number of posts (defined by amount)
-      var posts = $(data).find('item').slice(0, amount);
-      var recent = [];
-      // Loop posts
-      for (var i = 0; posts && i < posts.length; i++) {
-        var post = posts.eq(i);
-        recent.push({
-          title: post.find('title').text(),
-          link: post.find('link').text(),
-          date: post.find('pubDate').text()
-        });
-      }
-      cb(recent);
-    });
-  };
-  // Gets called on document ready
-  $(function() {
-    // Display 5 posts
-    loadRecentPosts(5, function(posts) {
-      for (var i = 0; i < posts.length; i++) {
-        var post = posts[i];
-        // Post is an object with a title, link and date property
-        // Create a wrapper with jQuery and append/insert anywhere
-        $("#latest-posts").append("<li><a href=\"" + post.link + "\">" + post.title + "</a></li>");
-      }
-    });
-  });
-</script>
-
-{{!-- RECENT POSTS --}}
-<h2>Latest Noms</h2>
-<ul id="latest-posts"></ul>
-<br>
-<form>
-  <input id="search-field" type="text" placeholder="WHERE'S MY NOMS?!"/><br>
-  <input id="search-submit" type="submit" class="btn btn-default" value="HELP ME!">
-</form>
-
-<script>
-$("#search-field").ghostHunter({
-    results         : "#results",
-    onKeyUp         : true
-});
-</script>
+{{> "recent-posts"}}
 
 <img class="divider" src="{{asset "images/divider-mixer.png"}}">
 
-{{!-- SUBSCRIBE --}}
-<h2>Don't Fight It</h2>
-<p>You know you love us. Just follow your, err, stomach man. Let us fix that rumbly in your tumbly.</p>
-
-<form action="//cookinginpjs.us9.list-manage.com/subscribe/post?u=2aa1dc89f268f2587a11ea242&amp;id=220e63abc7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  <div class="form-group">
-    <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Join the dark side!">
-  </div>
-  <div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>
-  <div style="position: absolute; left: -5000px;"><input type="text" name="b_2aa1dc89f268f2587a11ea242_220e63abc7" tabindex="-1" value=""></div>
-  <div class="clear"><input type="submit" value="DO IT" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default animated infinite tada"></div>
-</form>
-
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+{{> "subscribe"}}
 
 <img class="divider" src="{{asset "images/divider.png"}}">
 
-<a class="twitter-timeline" href="https://twitter.com/cookinginpjs" data-widget-id="689248731837763584">Tweets by @cookinginpjs</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+{{> "twitter"}}
 
 <img class="divider" src="{{asset "images/divider-mixer.png"}}">
 
-{{!-- MORE BLOGS --}}
-<h2>Still not Satisfied?</h2>
-<p>Check out some other pretty awesome food blogs</p>
-<ul class="blog-list">
-  <li><a href="http://uppukhara.com">UppuKhara</a></li>
-  <li><a href="http://www.loveandlemons.com">Love & Lemons</a></li>
-  <li><a href="http://www.iamafoodblog.com">I am a food blog</a></li>
-  <li><a href="http://www.thebeeroness.com">The Beeroness</a></li>
-  <li><a href="http://www.halfbakedharvest.com">Half Baked Harvest</a></li>
-  <li><a href="http://www.annies-eats.com">Annie's Eats</a></li>
-  <li><a href="http://fragrantvanillacake.blogspot.com">Fragrant Vanilla Cake</a></li>
-  <li><a href="http://www.thisrawsomeveganlife.com/">This Rawsome Vegan Life</a></li>
-  <li><a href="http://talesofakitchen.com">Tales of a Kitchen</a></li>
-  <li><a href="http://www.thefirstmess.com/">The First Mess</a></li>
-  <li><a href="http://www.thecookierookie.com">The Cookie Rookie</a></li>
-</ul>
+{{> "other-blogs"}}
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Cooking In Pajamas -->

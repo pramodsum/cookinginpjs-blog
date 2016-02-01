@@ -35,126 +35,28 @@ jQuery(document).ready(function () {
 
 <img class="divider" src="{{asset "images/divider.png"}}">
 
-<script>
-  var loadRecentPosts = function(amount, cb) {
-    var rss = $('link[type="application/rss+xml"]').attr('href');
-    $.get(rss, function(data) {
-      var parsed = $.parseXML(data);
-      // Only display the first number of posts (defined by amount)
-      var posts = $(data).find('item').slice(0, amount);
-      var recent = [];
-      // Loop posts
-      for (var i = 0; posts && i < posts.length; i++) {
-        var post = posts.eq(i);
-        recent.push({
-          title: post.find('title').text(),
-          link: post.find('link').text(),
-          date: post.find('pubDate').text()
-        });
-      }
-      cb(recent);
-    });
-  };
-
-  // Gets called on document ready
-  $(function() {
-    // Display 5 posts
-    loadRecentPosts(5, function(posts) {
-      for (var i = 0; i < posts.length; i++) {
-        var post = posts[i];
-        // Post is an object with a title, link and date property
-        // Create a wrapper with jQuery and append/insert anywhere
-        $("#latest-posts").append("<li><a href=\"" + post.link + "\">" + post.title + "</a></li>");
-      }
-    });
-  });
-</script>
-
-{{!-- RECENT POSTS --}}
-<h2>Latest Noms</h2>
-<ul id="latest-posts"></ul>
-<br>
-<div id="search-posts">
-  <form>
-    <input id="search-field" type="text" placeholder="WHERE'S MY NOMS?!"/><br>
-    <input id="search-submit" type="submit" class="btn btn-default" value="HELP ME!">
-  </form>
-</div>
-
-<script>
-$("#search-field").ghostHunter({
-    results         : "#results",
-    onKeyUp         : true
-});
-</script>
+{{> "recent-posts"}}
 
 <img class="divider" src="{{asset "images/divider-mixer.png"}}">
 
-{{!-- ABOUT US --}}
-<h2>Hello & Welcome</h2>
-<p><img class="circle" data-pin-no-hover="true" src="{{asset "images/about.jpg"}}"></p>
-<div class="about"><p>
-  This is the blog of <a href="http://sumninjacode.io">Sumu</a> and <a href="http://dearuniverse.me">Anu</a>, wayfaring adventurers and aspiring home cooks.
-</p></div>
-
-<p><a href="{{@blog.url}}/about">More about us!</a></p>
-
-<div><a href="https://www.instagram.com/cookinginpjs/?ref=badge" class="ig-b- ig-b-v-24"><img src="http://www.igworldclub.org/wp-content/uploads/2014/08/instagramicon.png" alt="Instagram" /></a></div>
-
-<div><a href="https://twitter.com/cookinginpjs" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @CookingInPjs</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+{{> "subscribe"}}
 
 <img class="divider" src="{{asset "images/divider.png"}}">
 
-{{!-- RECIPE HIGHLIGHTS --}}
-<h2>*Cue Drool*</h2>
-
-{{!-- INSTAFEED --}}
-<div id="instafeed"></div>
-
-<!-- SnapWidget -->
-{{!-- <script src="http://snapwidget.com/js/snapwidget.js"></script>
-<iframe src="http://snapwidget.com/in/?u=Y29va2luZ2lucGpzfGlufDEyNXwxfDEwfHxub3wxMHxub25lfG9uU3RhcnR8bm98eWVz&ve=050116" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe> --}}
+{{> "twitter"}}
 
 <img class="divider" src="{{asset "images/divider-mixer.png"}}">
 
-{{!-- SUBSCRIBE --}}
-<h2>Don't Fight It</h2>
-<p>You know you love us. Just follow your, err, stomach man. Let us fix that rumbly in your tumbly.</p>
+{{> "other-blogs"}}
 
-<div id="subscribe-page">
-    <input id="subscribe-btn" type="submit" class="btn btn-default animated infinite tada" value="DO IT">
-</div>
-<div id="inline-subscribe">
-  <form action="//cookinginpjs.us9.list-manage.com/subscribe/post?u=2aa1dc89f268f2587a11ea242&amp;id=220e63abc7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div class="form-group">
-      <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Join the dark side!">
-    </div>
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_2aa1dc89f268f2587a11ea242_220e63abc7" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="DO IT" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default animated infinite tada"></div>
-  </form>
-  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-</div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Cooking In Pajamas -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2905840351559408"
+     data-ad-slot="1776887355"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-<img class="divider" src="{{asset "images/divider.png"}}">
-
-{{!-- MORE BLOGS --}}
-<h2>Still not Satisfied?</h2>
-<p>Check out some other pretty awesome food blogs</p>
-<ul class="blog-list">
-  <li><a href="http://uppukhara.com">UppuKhara</a></li>
-  <li><a href="http://www.loveandlemons.com">Love & Lemons</a></li>
-  <li><a href="http://www.iamafoodblog.com">I am a food blog</a></li>
-  <li><a href="http://www.thebeeroness.com">The Beeroness</a></li>
-  <li><a href="http://www.halfbakedharvest.com">Half Baked Harvest</a></li>
-  <li><a href="http://www.annies-eats.com">Annie's Eats</a></li>
-  <li><a href="http://fragrantvanillacake.blogspot.com">Fragrant Vanilla Cake</a></li>
-  <li><a href="http://www.thisrawsomeveganlife.com/">This Rawsome Vegan Life</a></li>
-  <li><a href="http://talesofakitchen.com">Tales of a Kitchen</a></li>
-  <li><a href="http://www.thefirstmess.com/">The First Mess</a></li>
-  <li><a href="http://www.thecookierookie.com">The Cookie Rookie</a></li>
-</ul>
