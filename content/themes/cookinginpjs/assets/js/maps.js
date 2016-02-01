@@ -1,5 +1,6 @@
 var locations = [
   ['Frita Batidos', "http://cookinginpjs.com/frita-batidos/", 42.280377, -83.74942],
+  ['Vidhyarthi Bhavan', "http://cookinginpjs.com/vidhyarthi-bhavan/", 12.9450534, 77.569279],
 ];
 
 var map = new google.maps.Map(document.getElementById('map'), {
