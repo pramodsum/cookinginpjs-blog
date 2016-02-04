@@ -2,13 +2,23 @@
 <script>
 function onSuccess(data) {
   // console.log('tags: ' + data.tags);
+  var anu, sumu = 0;
   $.each(data.tags, function (i, tag) {
     // console.log(tag);
     if(tag.slug == "anuchallenge2016") {
-      $('#anu-count').append(tag.count.posts);
+      anu = tag.count.posts;
+      $('#anu-count').append(anu);
     } else if(tag.slug == "sumuchallenge2016") {
-      $('#sumu-count').append(tag.count.posts);
+      sumu = tag.count.posts;
+      $('#sumu-count').append(sumu);
     }
+
+    // //highlight current winner if any
+    // if(anu > sumu) {
+    //   $('#anu').addClass("animated infinite pulse");
+    // } else {
+    //   $('#sumu').addClass("animated infinite pulse");
+    // }
   });
 }
 
@@ -24,11 +34,11 @@ jQuery(document).ready(function () {
 <p>Keep us on our toes! Here's how we're doing on our 2016 New Years post challenge!</p>
 <div id="challenge-count" class="row">
   <div class="one-half column"><center>
-    <image class="author-thumb" src="{{asset "images/anu.jpeg"}}"><br>
+    <image id="anu" class="author-thumb" src="{{asset "images/anu.jpeg"}}"><br>
     <a href="{{@blog.url}}/tag/anuchallenge2016">Anu: <span id="anu-count"></span></a>
   </center></div>
   <div class="one-half column"><center>
-    <image class="author-thumb" src="{{asset "images/sumu.jpeg"}}"><br>
+    <image id="sumu" class="author-thumb" src="{{asset "images/sumu.jpeg"}}"><br>
     <a href="{{@blog.url}}/tag/sumuchallenge2016">Sumu: <span id="sumu-count"></span></a>
   </center></div>
 </div>

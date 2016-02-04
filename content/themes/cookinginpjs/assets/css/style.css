@@ -3,6 +3,7 @@
 @import "fonts.css";
 @import "navbar.css";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css");
+/*@import "hover.min.css";*/
 
 /*
 HEADER
@@ -330,6 +331,9 @@ li.ingredient {  padding-bottom: 5px; margin-bottom: 0;}
     padding-top: 8px;
   }
 }
+
+.crown { max-width: 250px; width: 100%; border-radius: 0px !important; z-index: 100;}
+
 
 /*
 BODY

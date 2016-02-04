@@ -13,7 +13,7 @@
         for(var i = 0; i < results.data.length; i++) {
           var obj = results.data[i];
           // console.log(obj);
-          var html = '<a href="' + obj.link + '" class="overlay" >' +
+          var html = '<a href="' + obj.link + '" class="overlay hvr-pop" >' +
             '<img src="' + obj.images.standard_resolution.url + '">' +
             '<div class="likes"><i class="ion-ios-heart"></i>' + obj.likes.count + ' ' +
             '<i class="ion-chatbubble"></i> ' + obj.comments.count + '</div></a>';
