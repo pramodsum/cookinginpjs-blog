@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+var firebaseUrl = "https://cookinginpajamas.firebaseio.com/";
+
+//access ghost blog externally? 
+function updateDonations() {
+  // if(!isLocalEnv()) {
+    $.get(ghost.url.api('posts', {limit: 1, filter: 'author:' + person, order: 'published_at desc'})).done(function (data){
+      var latestPost = data.posts[0];
+      if(failedToPostOnTime(latestPost.published_at, deadline)) {
+        // Increment donations count if needed
+        authorRef.transaction(function(currentDonations) { 
+          return currentDonations + 10;
+        });
+      }
+    }).fail(function (err){
+      console.log(err);
+    });
+  // } else {
+  //   console.log("You are currently in the local environment so no donation calculations will occur.");
+  // }
+}
+
+/**
+ * [isNotLocalEnv description]
+ * @return {Boolean} [description]
+ */
+function isLocalEnv() { 
+  return (document.location.hostname == "localhost") ? true : false;
+}
