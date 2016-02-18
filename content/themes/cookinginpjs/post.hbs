@@ -24,11 +24,11 @@
           {{tags separator=" #" prefix="#"}}
           <br>
           <i class="ion-calendar"></i> <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
-          <i class="ion-chatbubble"></i> <a href="{{url}}#comments"><span class="fb-comments-count" data-href="{{url}}"></span> Comments</a>
+          <i class="ion-chatbubble"></i> <a href="{{url}}#comments"><span class="fb-comments-count" data-href="{{@blog.url}}{{url}}"></span> Comments</a>
           <br>
           by {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}} <span class="author"><a href="{{author.website}}">{{author.name}}</a></a></span>
         <section id="social-sharing">
-          <div class="fb-like" data-href="{{url}}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+          <div class="fb-like" data-href="{{@blog.url}}{{url}}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 {{!--           <a class="btn twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"><img src="{{asset "images/twitter-share.png"}}"></a>
           <a class="btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"><img src="{{asset "images/facebook-share.png"}}"></a>
           <a class="btn pinterest" href="http://pinterest.com/pin/create/bookmarklet/?media={{image absolute=V"true"}}&url={{url absolute="true"}}&is_video=false&description={{encode title}} | Cooking In Pajamas"><img src="{{asset "images/pinterest-share.png"}}"></a>
