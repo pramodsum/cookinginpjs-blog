@@ -33,7 +33,13 @@ function calculateDonations(authors) {
         authorRef = new Firebase(firebaseUrl + person);
 
     var deadline = getLocalPostTime(person, postDate);
+    // var lastPublished = getLastPublishedPost(person);
     console.log(person + ": " + deadline)
+
+    // if(failedToPostOnTime(lastPublished, deadline)) {
+    //   //increment donations count?
+    //   console.log("FAILED TO POST");
+    // }
 
     // Append donations amount to page
     authorRef.on("value", function(snapshot) {
@@ -56,6 +62,15 @@ function getLocalPostTime(person, postDate) {
       offset = (person == "sumedha") ? 4 : 1,
       timestamp = moment().isoWeekday(offset);
   return moment.tz(timestamp, "America/" + locale).startOf('day').format();
+}
+
+/**
+ * [getLastPublishedPost description]
+ * @param  {[type]} person [description]
+ * @return {[type]}        [description]
+ */
+function getLastPublishedPost(person) {
+  return (published < deadline) ? true : false;
 }
 
 /**
