@@ -1,5 +1,5 @@
 var anagha = 0, sumedha = 0;
-var firebaseUrl = "https://cookinginpajamas.firebaseio.com/";
+var firebaseUrl = "https://cookinginpajamas.firebaseio.com/donations/";
 
 /**
  * [appendPostCount description]
