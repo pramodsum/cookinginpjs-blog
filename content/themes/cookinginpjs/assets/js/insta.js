@@ -1,5 +1,5 @@
 (function ($, undefined) {
-  var accessToken = '2462667315.467ede5.6a8150827314439e9d18ba4c52596886';
+  var accessToken = '2462667315.1677ed0.3af4d98ed21f4c69ae709bc247cf207e';
 
   $.ajax({
     type: "POST",
