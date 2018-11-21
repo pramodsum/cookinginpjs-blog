@@ -11,7 +11,7 @@ config = {
     // Configure your URL and mail settings here
     // ### Production
     production: {
-        url: 'http://cookinginpjs.com',
+        url: 'http://www.cookinginpjs.com',
         mail: {
           transport: 'SMTP',
           host: 'smtp.mandrillapp.com',
