@@ -1,13 +1,13 @@
 {
-  "url": "http://localhost:2370/",
+  "url": "http://localhost:2368/",
   "server": {
-    "port": 2370,
+    "port": 2368,
     "host": "127.0.0.1"
   },
   "database": {
     "client": "sqlite3",
     "connection": {
-      "filename": "/Users/spramod/gatsby/blog/content/data/ghost-local.db"
+      "filename": "content/data/ghost-local.db"
     }
   },
   "mail": {
@@ -21,6 +21,6 @@
   },
   "process": "local",
   "paths": {
-    "contentPath": "/Users/spramod/gatsby/blog/content"
+    "contentPath": "content"
   }
 }
