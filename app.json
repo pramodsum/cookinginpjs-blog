@@ -1,0 +1,57 @@
+{
+  "addons": [
+    "papertrail",
+    "heroku-postgresql",
+    "newrelic",
+    "scheduler"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "HEROKU_POSTGRESQL_GREEN_URL": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "MANDRILL_APIKEY": {
+      "required": true
+    },
+    "MANDRILL_USERNAME": {
+      "required": true
+    },
+    "NEW_RELIC_LICENSE_KEY": {
+      "required": true
+    },
+    "NEW_RELIC_LOG": {
+      "required": true
+    },
+    "NODE_ENV": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "Cooking-In-Pajamas",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
